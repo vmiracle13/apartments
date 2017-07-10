@@ -1,0 +1,23 @@
+@import "fonts.css";
+
+@font-face {
+    font-family: 'Trade Gothic';
+    src: url('fonts/TradeGothic/trade-gothic-lt-1361519976/trade-gothic-lt-1361519976.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic Bold';
+    src: url('fonts/TradeGothic/tradegothicltstd-bd2.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trade Gothic Condensed';
+    src: url('fonts/TradeGothic/trade-gothic-bold-condensed-no-20-1361519978/trade-gothic-bold-condensed-no-20-1361519978.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+}

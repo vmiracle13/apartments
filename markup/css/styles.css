@@ -1,0 +1,341 @@
+@import "fonts.css";
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font: 100% "Trade Gothic";
+    color: #fff;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: "Trade Gothic Condensed";
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+header {
+    padding: 4.5% 7%;
+    overflow: hidden;
+    background: url(../images/170302153930-new-apartment-architecture-3-super-169.jpg) 100% 30% no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    background: url(../images/logo.png) 0 0 no-repeat;
+    width: 162px;
+    height: 60px;
+    margin: 0 auto -3.8% auto;
+}
+
+header h1 a {
+    text-indent: -9999px;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Trade Gothic Condensed";
+    font-size: 2em;
+    letter-spacing: 0.3em;
+    margin-bottom: 1%;
+}
+
+.address {
+    display: block;
+    margin-bottom: 3.5%;
+}
+
+
+nav {
+    font-size: 0.65em;
+    font-family: "Trade Gothic Bold";
+    letter-spacing: 0.2em;
+    margin-bottom: 16%;
+    overflow: hidden;
+}
+
+nav span {
+    margin-right: 5.3%;
+}
+
+nav span:nth-of-type(4) {
+    margin-right: 0;
+}
+
+nav span:nth-of-type(-n + 3) {
+    float: left;
+}
+
+nav span:nth-of-type(n + 4) {
+    float: right;
+}
+
+.upper {
+    margin: 0 auto;
+}
+
+
+
+
+
+.bottom-left {
+    border-left: none;
+    border-bottom: none;
+    padding: 0;
+
+}
+
+.bottom-left a {
+    display: block;
+    background: url(../images/finbar.jpg) 0 0 no-repeat;
+    width: 198px;
+    height: 50px;
+
+}
+
+
+.bottom-right {
+    border-right: none;
+    border-bottom: none;
+
+
+
+}
+
+.bottom-right a {
+    display: block;
+    background-color: #ef7d1d;
+    padding: 8% 0 8% 24%;
+    text-align: left;
+    font-family: "Trade Gothic Condensed";
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+
+}
+
+
+
+
+main {
+    background-color: #1a1a22;
+    padding: 0 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 7% 8% 11%;
+    background-color: #171926;
+    font-size: 0.85em;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+footer h4 {
+    font-size: 1.6em;
+}
+
+table {
+    font-family: "Trade Gothic Bold";
+    width: 60%;
+}
+
+table td {
+    padding: 2.5% 5%;
+    border: 1px solid #fff;
+}
+
+.bottom {
+    margin: 0 auto 10%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.table-text-decoration {
+    letter-spacing: 0.2em;
+    font-family: "Trade Gothic Condensed";
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.left-side {
+    float: left;
+    width: 20%;
+    margin-right: 8%;
+}
+
+.left-side h4 {
+    margin-bottom: 35%;
+}
+
+.left-side article {
+    text-transform: none;
+    margin-bottom: 3.5%;
+}
+
+.left-side article:last-of-type {
+    margin-bottom: 15%;
+}
+
+form {
+    overflow: hidden;
+    margin-right: 10%;
+}
+
+.left-column {
+    padding-right: 3%;
+    width: 37%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-column span {
+    text-transform: none;
+    color: #878b96;
+}
+
+.right-column {
+    width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+form h4 {
+    margin-bottom: 7.5%;
+}
+
+.underline {
+    background-color: #171926;
+    border: none;
+    border-bottom: 1px solid #373b47;
+    outline: none;
+}
+
+.block {
+    display: block;
+}
+
+form input {
+    padding: 5.5% 0;
+    margin-bottom: 4%;
+    width: 100%;
+    font-family: "Trade Gothic";
+}
+
+form input:last-of-type {
+    margin-bottom: 14%;
+}
+
+form input::-moz-placeholder {
+    color: #fff;
+}
+form input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+form input:focus {
+    border-bottom: 1px solid #f17c1d;
+}
+
+form select {
+    outline: none;
+    display: block;
+    padding: 2.85% 0;
+    width: 74%;
+    margin-bottom: 2.3%;
+    color: #fff;
+    font-family: "Trade Gothic";
+}
+
+.right-column select option {
+    padding: 30%;
+}
+
+form select:last-of-type {
+    margin-bottom: 4%;
+}
+
+form textarea {
+    padding: 2.5% 1%;
+    display: block;
+    margin-bottom: 5%;
+    width: 72%;
+}
+
+form textarea::-moz-placeholder {
+    color: #fff;
+    font-family: "Trade Gothic";
+}
+form textarea::-webkit-input-placeholder  {
+    color: #fff;
+    font-family: "Trade Gothic";
+}
+
+form button {
+    padding: 4% 24.7%;
+
+}
+
+.right-side {
+    float: right;
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.right-side h4 {
+    margin-bottom: 48%;
+    font-size: 2em;
+}
+
+.contact-list li {
+    margin-bottom: 14%;
+    font-size: 1.15em;
+}
+
+.contact-phone {
+    font-weight: normal;
+}
+
+button {
+    background-color: #ef7d1d;
+    border: none;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 8% 15%;
+    font-family: "Trade Gothic Condensed";
+    font-size: 1.1em;
+}
