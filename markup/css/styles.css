@@ -12,6 +12,10 @@ body {
     text-transform: uppercase;
 }
 
+.clearfix {
+    clear: both;
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -30,6 +34,7 @@ header {
     background: url(../images/170302153930-new-apartment-architecture-3-super-169.jpg) 100% 30% no-repeat;
     background-size: cover;
     text-align: center;
+
 }
 
 h1 {
@@ -87,15 +92,10 @@ nav span:nth-of-type(n + 4) {
     margin: 0 auto;
 }
 
-
-
-
-
 .bottom-left {
     border-left: none;
     border-bottom: none;
     padding: 0;
-
 }
 
 .bottom-left a {
@@ -103,16 +103,11 @@ nav span:nth-of-type(n + 4) {
     background: url(../images/finbar.jpg) 0 0 no-repeat;
     width: 198px;
     height: 50px;
-
 }
-
 
 .bottom-right {
     border-right: none;
     border-bottom: none;
-
-
-
 }
 
 .bottom-right a {
@@ -123,16 +118,76 @@ nav span:nth-of-type(n + 4) {
     font-family: "Trade Gothic Condensed";
     letter-spacing: 0.2em;
     font-size: 0.9em;
-
 }
-
-
-
 
 main {
     background-color: #1a1a22;
     padding: 0 7%;
 }
+
+.bgimg {
+    width: 400px;
+    height: 934px;
+    background: url(../images/o2-tower-2289697_1920.jpg) 0 0 no-repeat;
+    box-shadow: inset 0px 0px 100px 50px rgba(0,0,0,0.9);
+    opacity: 0.1;
+    margin: 0 auto;
+}
+
+.main-layout {
+    margin-top: -60%;
+    overflow: hidden;
+}
+
+.right-photo {
+    float: right;
+    margin-bottom: 15%;
+}
+
+.left {
+    margin-top: 13%;
+}
+
+.main-layout article {
+    width: 25%;
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+.main-layout h4 {
+    margin-bottom: 7%;
+    width: 67%;
+}
+
+.main-layout a {
+    width: 12%;
+    background-color: #ef7d1d;
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    font-family: "Trade Gothic Condensed";
+    letter-spacing: 0.15em;
+}
+
+.left-photo {
+    float: left;
+    margin-right: 28%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,12 +254,12 @@ table td {
     margin-bottom: 35%;
 }
 
-.left-side article {
+.left-side p {
     text-transform: none;
     margin-bottom: 3.5%;
 }
 
-.left-side article:last-of-type {
+.left-side p:last-of-type {
     margin-bottom: 15%;
 }
 
