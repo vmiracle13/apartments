@@ -37,8 +37,7 @@
                 </div>
 
                 <section class="main-layout">
-
-                    <img class="right-photo" src="images/apartment-2084992_1920.jpg" alt="apartment" width="550px" height="380px">
+                    <img class="right-photo" src="images/apartment-2084992_1920.jpg" alt="apartment">
                     <article class="left">
                         <h4>There's something in the Aire</h4>
                         <p>Have the best of both worlds at AIRE. You'll be nestled between the lush tranquility of Kings Park, the buzz of Subiaco,
@@ -48,10 +47,10 @@
                     <div class="clearfix">
                     </div>
 
-                    <img class="left-photo" src="images/interior-1026440_1920.jpg" width="550px" height="380px" alt="luxury life">
+                    <img class="left-photo" src="images/interior-1026440_1920.jpg" alt="luxury life">
                     <article class="right">
                         <h4>High quality city living without the price tag.</h4>
-                        <p>Apartment layouts have been designed to suit the city lifestyle, with 1 and 2 bedroom configurations available. </article>
+                        <p>Apartment layouts have been designed to suit the city lifestyle, with 1 and 2 bedroom configurations available.
                     </article>
 
                     <a class="uppercase" href="#view-plans">view floorplans</a>
@@ -59,14 +58,15 @@
                     <div class="clearfix">
                     </div>
                 </section>
-
-
             </div>
 
-            <video> Video is not loading at all!
-                <source src="video/duel.ogv" type='video/ogg' controls width="300" height="200">
-            </video>
-
+            <div class="video-block">
+                <span>Test video at lesson on 10.07.2017</span>
+                <video width='300' height='200' controls='controls'>Your browser does not support the video element.
+                    <source src='video/Muse-Starlight-_Official-Music-Video_.ogv' type='video/ogg' />
+                    <source src='video/Muse%20-%20Starlight%20%5BOfficial%20Music%20Video%5D.mp4' type='video/mp4' />
+                </video>
+            </div>
 
 
         </main>
@@ -118,38 +118,50 @@
                 </ul>
             </section>
 
-            <form name="enquire" id="enquire">
+            <form name="enquire" id="enquire" action="#" >
                 <h4>Enquire</h4>
 
-                <div class="left-column">
-                    <input class="underline block" placeholder="First Name">
-                    <input class="underline block" placeholder="Last Name">
-                    <input class="underline block" type="Email" placeholder="Email">
-                    <input class="underline block" placeholder="Phone">
-                    <input class="underline block" placeholder="Postcode">
+                <div class="left-column" autocomplete="on">
+                    <input class="underline block" title="Please, enter your first name from the capital letter"
+                           type="text" placeholder="First Name" pattern="^[A-Z][a-z](+\s[A-Z][a-z]+)?" required>
+                    <input class="underline block" title="Please, enter your first name from the capital letter"
+                           placeholder="Last Name" pattern="^[A-Z][a-z](+\s[A-Z][a-z]+)?" required>
 
-                    <span>* Required fields</span>
+                    <div class="gender-block">
+                        <span class="block">Gender</span>
+                        <label for="female">Female</label><input class="gender" id="female" name="gender" type="radio">
+                        <label for="male">Male</label><input class="gender" id="male" name="gender" type="radio">
+                    </div>
+
+                    <label>Birth date<input class="underline date" min="2017-07-11" type="date" value="2017-07-13"></label>
+                    <input class="underline block" type="email" pattern="^(([a-z0-9-_\+]){2,}\.?)+@([a-z0-9-_\+]{2,}\.?)+"
+                           placeholder="Email" required>
+                    <input class="underline block" title="Please, enter the phone in format 1234 567 890"
+                           pattern="^(\d{4}\s\d{3}\s\d{3})" placeholder="Phone" required>
+                    <input class="underline block" placeholder="Address">
+
+                    <span class="required">* Required fields</span>
                 </div>
 
                 <div class="right-column">
                     <select class="underline block">
                         <option>How did you hear about us</option>
-                        <option>Friends</option>
-                        <option>Advertisement</option>
-                        <option>Internet</option>
-                        <option>Other variant</option>
+                        <option value="friends">Friends</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="internet">Internet</option>
+                        <option value="other">Other variant</option>
                     </select>
 
                     <select class="underline block">
                         <option>What are you looking for</option>
-                        <option>1 bed appartament</option>
-                        <option>2 bed appartament</option>
-                        <option>3 bed appartament</option>
+                        <option value="1">1 bed appartament</option>
+                        <option value="2">2 bed appartament</option>
+                        <option value="3">3 bed appartament</option>
                     </select>
 
-                    <textarea class="underline block" placeholder="Questions / Comments" cols="30" rows="8"></textarea>
+                    <textarea class="underline block" name="textarea" placeholder="Questions / Comments" cols="30" rows="8"></textarea>
 
-                    <button>Send enquiry</button>
+                    <button type="submit">Send enquiry</button>
                 </div>
             </form>
         </footer>

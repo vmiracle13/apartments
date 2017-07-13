@@ -139,6 +139,11 @@ main {
     overflow: hidden;
 }
 
+.main-layout img {
+    width: 550px;
+    height: 380px;
+}
+
 .right-photo {
     float: right;
     margin-bottom: 15%;
@@ -172,11 +177,17 @@ main {
 .left-photo {
     float: left;
     margin-right: 28%;
+    margin-bottom: 5%;
 }
 
+.video-block span {
+    display: block;
+    margin-bottom: 2%;
+}
 
-
-
+.video-block video {
+    border: 1px solid darkgrey;
+}
 
 
 
@@ -275,9 +286,35 @@ form {
     vertical-align: top;
 }
 
-.left-column span {
+.left-column .required {
     text-transform: none;
     color: #878b96;
+}
+
+.gender-block {
+    border-bottom: 1px solid #373b47;
+    padding-bottom: 3%;
+    margin-bottom: 7%;
+}
+
+.gender-block span {
+    margin-bottom: 5%;
+}
+
+.gender-block label {
+    margin-right: 5%;
+}
+
+.gender-block input:first-of-type {
+    margin-right: 20%;
+}
+
+.gender-block input {
+   vertical-align: text-top;
+}
+
+.gender-block:hover {
+    border-bottom: 1px solid #ef7d1d;
 }
 
 .right-column {
@@ -306,10 +343,7 @@ form input {
     margin-bottom: 4%;
     width: 100%;
     font-family: "Trade Gothic";
-}
-
-form input:last-of-type {
-    margin-bottom: 14%;
+    color: #fff;
 }
 
 form input::-moz-placeholder {
@@ -321,6 +355,15 @@ form input::-webkit-input-placeholder {
 
 form input:focus {
     border-bottom: 1px solid #f17c1d;
+}
+
+form .gender {
+    width: auto;
+}
+
+
+form .date {
+    background-color: #171926;
 }
 
 form select {
@@ -337,6 +380,14 @@ form select {
     padding: 30%;
 }
 
+.right-column span {
+    margin-bottom: 2%;
+}
+
+.right-column progress {
+    margin-bottom: 7%;
+}
+
 form select:last-of-type {
     margin-bottom: 4%;
 }
@@ -346,6 +397,7 @@ form textarea {
     display: block;
     margin-bottom: 5%;
     width: 72%;
+    color: #fff;
 }
 
 form textarea::-moz-placeholder {
