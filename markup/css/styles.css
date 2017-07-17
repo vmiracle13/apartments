@@ -120,6 +120,19 @@ nav span:nth-of-type(n + 4) {
     font-size: 0.9em;
 }
 
+.background-advantages {
+    position: absolute;
+    top: 300%;
+    left: 5.8%;
+}
+
+.background-advantages img {
+    opacity: 0.05;
+    width: 1400px;
+    height: 1000px;
+    z-index: -100;
+}
+
 main {
     background-color: #1a1a22;
     padding: 0 7%;
@@ -134,14 +147,58 @@ main {
     margin: 0 auto;
 }
 
+.border {
+    border: 3px solid #c76a1a;
+    width: 350px; /*400px */
+    height: 580px; /* 680px */
+    position: absolute;
+    left: 38%;
+    top: 25%;
+}
+
+
+.line {
+    position: absolute;
+    top: 30%;
+    left: 74%;
+    border-left: 3px solid #fff;
+    height: 25%;
+}
+
 .main-layout {
     margin-top: -60%;
     overflow: hidden;
+    position: relative;
 }
 
 .main-layout img {
     width: 550px;
     height: 380px;
+}
+
+.main-layout span {
+    font-family: "Trade Gothic Condensed";
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #848486;
+    letter-spacing: 0.15em;
+    /* Трансформируем текст */
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+}
+
+.right-comment {
+    position: absolute;
+    top: 32.5%;
+    left: 49%;
+}
+
+.left-comment {
+    position: absolute;
+    top: 60%;
+    left: 43%;
 }
 
 .right-photo {
@@ -161,7 +218,7 @@ main {
 
 .main-layout h4 {
     margin-bottom: 7%;
-    width: 67%;
+    width: 70%;
 }
 
 .main-layout a {
@@ -174,10 +231,18 @@ main {
     letter-spacing: 0.15em;
 }
 
+.main-layout p {
+    margin-bottom: 10%;
+}
+
 .left-photo {
     float: left;
     margin-right: 28%;
     margin-bottom: 5%;
+}
+
+.video-block {
+    margin-bottom: 10%;
 }
 
 .video-block span {
@@ -188,6 +253,97 @@ main {
 .video-block video {
     border: 1px solid darkgrey;
 }
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    box-shadow: inset 0px 0px 500px 360px rgba(26, 26, 34, 0.9);
+    background-color: #384c67;
+}
+
+.left-flex-block {
+    margin-right: 10%;
+}
+
+.left-flex-block h4 {
+    margin-bottom: 5%;
+}
+
+.left-flex-block p {
+    margin-bottom: 12%;
+}
+
+.title1 {
+    width: 68%;
+}
+
+.list1 {
+    margin-bottom: 15%;
+}
+
+.list1 li {
+    display: inline-block;
+    width: 18%;
+    margin-right: 8%;
+    font-family: "Trade Gothic Condensed";
+    font-size: 0.8em;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.list1 li:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.list1 li:nth-of-type(-n + 4) {
+    margin-bottom: 8%;
+}
+
+.list1 li img {
+    display: block;
+    margin: 0 auto 20% auto;
+}
+
+.bg-advantages {
+    width: 540px;
+    height: 1010px;
+}
+
+hr {
+    background-color: #fff;
+    width: 20%;
+    margin: 0 0 15% 0;
+    padding: 0;
+}
+
+.title2 {
+    width: 70%;
+}
+
+.list2 {
+    column-count: 2;
+}
+
+.list2 li {
+    display: block;
+    font-family: "Trade Gothic Condensed";
+    font-size: 0.8em;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5%;
+    margin: 0 4% 4% 0;
+}
+
+.list2 li:nth-of-type(n + 4) {
+    margin-right: 0;
+}
+
+.list2 img {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 5%;
+
+}
+
 
 
 
@@ -244,16 +400,6 @@ table td {
     font-size: 1.1em;
 }
 
-
-
-
-
-
-
-
-
-
-
 .left-side {
     float: left;
     width: 20%;
@@ -278,6 +424,14 @@ form {
     margin-right: 10%;
 }
 
+.required:after {
+    content: " ";
+    display: inline-block;
+    background: url(../images/asteriks.jpg) 0 0 no-repeat;
+    width: 6px;
+    height: 5px;
+}
+
 .left-column {
     padding-right: 3%;
     width: 37%;
@@ -286,7 +440,7 @@ form {
     vertical-align: top;
 }
 
-.left-column .required {
+.left-column .required-text {
     text-transform: none;
     color: #878b96;
 }
@@ -324,12 +478,6 @@ form {
 
 .gender-block:hover {
     border-bottom: 1px solid #ef7d1d;
-}
-
-.right-column {
-    width: 60%;
-    box-sizing: border-box;
-    display: inline-block;
 }
 
 form h4 {
@@ -370,7 +518,6 @@ form .gender {
     width: auto;
 }
 
-
 form .date {
     background-color: #171926;
 }
@@ -378,11 +525,26 @@ form .date {
 form select {
     outline: none;
     display: block;
-    padding: 2.85% 0;
+    padding: 2.8% 0;
     width: 74%;
-    margin-bottom: 2.3%;
+    margin-bottom: 2%;
     color: #fff;
     font-family: "Trade Gothic";
+    border: 1px solid #373a49;
+    background-color: #171926;
+}
+
+.right-column {
+    width: 60%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-top: 0.5%;
+}
+
+.right-column label {
+    display: inline-block;
+    padding: 2% 0;
+    margin-bottom: 2.8%;
 }
 
 .right-column select option {
@@ -397,16 +559,22 @@ form select {
     margin-bottom: 7%;
 }
 
+.right-column .label2 {
+    margin-bottom: 1.2%;
+    padding: 0;
+}
+
 form select:last-of-type {
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 form textarea {
-    padding: 2.5% 1%;
     display: block;
     margin-bottom: 5%;
+    padding-bottom: 2%;
     width: 72%;
     color: #fff;
+    line-height: 1.7;
 }
 
 form textarea::-moz-placeholder {
@@ -455,13 +623,21 @@ button {
     font-size: 1.1em;
 }
 
-ul {
+
+/* class work */
+.chess {
+    background-color: navajowhite;
+}
+
+.chess ul {
     border: 1px solid #000;
     margin: 0;
     padding: 0;
-    width: auto;
+    width: 9%;
 }
-ul li {
+.chess ul li {
+    margin: 0;
+    padding: 0;
     width: 10px;
     height: 10px;
     display: inline-block;
@@ -473,32 +649,23 @@ ul:nth-child(2n) li:nth-child(2n + 1){
 ul:nth-child(2n) li:nth-child(2n) {
     background-color: #fff;
 }
-
 ul:nth-child(2n +1) li:nth-child(2n + 1) {
     background-color: #fff;
 }
 ul:nth-child(2n+1) li:nth-child(2n) {
     background-color: #000;
 }
-
-.dash ul:first-of-type li {
+.chess ul:first-of-type li {
     background-color: orange;
 }
-
-.dash ul:last-of-type li {
+.chess ul:last-of-type li {
     background-color: yellow;
 }
-
-.dash ul li:last-of-type {
+.chess ul li:last-of-type {
     background-color: green;
 }
-
-.dash ul li:first-of-type {
+.chess ul li:first-of-type {
     background-color: purple;
-}
-
-.dash ul:nth-of-type(1n+1) li:nth-of-type(4) {
-    background-color: red;
 }
 
 .circle {

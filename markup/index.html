@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
         <header>
             <h1><a href="index.html">AIRE west perth</a></h1>
             <nav class="uppercase">
@@ -29,15 +30,23 @@
             </table>
         </header>
 
-        <main>
+        <div class="background-advantages">
+            <img src="images/9a84d3e2e4901533a7c1f1c917652561.jpg" alt="background">
+        </div>
 
+        <main>
             <div class="intro">
 
                 <div class="bgimg">
                 </div>
 
                 <section class="main-layout">
+                    <div class="border">
+                    </div>
+
+                    <span class="block right-comment">spacious living</span>
                     <img class="right-photo" src="images/apartment-2084992_1920.jpg" alt="apartment">
+
                     <article class="left">
                         <h4>There's something in the Aire</h4>
                         <p>Have the best of both worlds at AIRE. You'll be nestled between the lush tranquility of Kings Park, the buzz of Subiaco,
@@ -47,7 +56,11 @@
                     <div class="clearfix">
                     </div>
 
+                    <div class="line">
+                    </div>
+
                     <img class="left-photo" src="images/interior-1026440_1920.jpg" alt="luxury life">
+                    <span class="block left-comment">inner city living</span>
                     <article class="right">
                         <h4>High quality city living without the price tag.</h4>
                         <p>Apartment layouts have been designed to suit the city lifestyle, with 1 and 2 bedroom configurations available.
@@ -67,6 +80,86 @@
                     <source src='video/Muse%20-%20Starlight%20%5BOfficial%20Music%20Video%5D.mp4' type='video/mp4' />
                 </video>
             </div>
+
+            <section class="advantages">
+                <div class="left-flex-block">
+                    <h4 class="title1">Premium finishings, resort style facilities</h4>
+                    <p class="text1">With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
+                        All apartments include:</p>
+                    <ul class="uppercase list1">
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>quality stone Benchtops</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>nbn ready</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>fully equipment gymnasium</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>kid's playrooms</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>entertaining area and games rooms</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>solar swimming pool and sauna</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>premium feature / amenity</span>
+                        </li>
+                        <li>
+                            <img src="images/crown.png" alt="crown symbol" title="advantages">
+                            <span>Meeting halls</span>
+                        </li>
+                    </ul>
+
+                    <hr>
+
+                    <h4 class="title2">Sustainable living</h4>
+                    <p class="text2">With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
+                        All apartments include:</p>
+                    <ul class="uppercase list2">
+                        <li>
+                            <img src="images/icons/bar-graph-icon_32x32px.png" alt="energy monitoring">
+                            <span>energy monitoring</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/lightbulb-icon_32x32px.png" alt="led lighting">
+                            <span>led lighting</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/video-camera-icon_32x32px.png" alt="motion sensors">
+                            <span>motion sensors</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/car-icon_32x32px.png" alt="public transport">
+                            <span>public transport</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/bookmark-icon_32x32px.png" alt="star rating">
+                            <span>6 star rating</span>
+                        </li>
+                        <li>
+                            <img src="images/icons/recycle-icon_32x32px.png" alt="renewable energy">
+                            <span>renewable energy</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/2b142fef32232e589c9c2c0f85f0d2a1--luxury-modern-homes-luxury-houses.jpg" alt="bg-image"
+                     class="bg-advantages">
+            </section>
+
+
+
+
 
 
         </main>
@@ -122,10 +215,10 @@
                 <h4>Enquire</h4>
 
                 <div class="left-column" autocomplete="on">
-                    <input class="underline block" title="Please, enter your first name from the capital letter"
+                    <input class="underline block required" title="Please, enter your first name from the capital letter"
                            type="text" placeholder="First Name" pattern="^[A-Z][a-z](+\s[A-Z][a-z]+)?" required>
-                    <input class="underline block" title="Please, enter your first name from the capital letter"
-                           placeholder="Last Name" pattern="^[A-Z][a-z](+\s[A-Z][a-z]+)?" required>
+                    <input class="underline block required" title="Please, enter your first name from the capital letter"
+                           type="text" placeholder="Last Name" pattern="^[A-Z][a-z](+\s[A-Z][a-z]+)?" required>
 
                     <div class="gender-block">
                         <span class="block">Gender</span>
@@ -133,128 +226,125 @@
                         <label for="male">Male</label><input class="gender" id="male" name="gender" type="radio">
                     </div>
 
-                    <label>Birth date<input class="underline date" min="2017-07-11" type="date" value="2017-07-13"></label>
-                    <input class="underline block" type="email" pattern="^(([a-z0-9-_\+]){2,}\.?)+@([a-z0-9-_\+]{2,}\.?)+"
+                    <label>Birth date<input class="underline date required" min="2017-07-11" title="Please, choose the birth date"
+                                            type="date" value="2017-07-13"></label>
+                    <input class="underline block required" title="Please, enter the email address" type="email" pattern="^(([a-z0-9-_\+]){2,}\.?)+@([a-z0-9-_\+]{2,}\.?)+"
                            placeholder="Email" required>
-                    <input class="underline block" title="Please, enter the phone in format 1234 567 890"
+                    <input class="underline block" title="Please, enter your address" placeholder="Address">
+                    <input class="underline block required" title="Please, enter the phone in format 1234 567 890"
                            pattern="^(\d{4}\s\d{3}\s\d{3})" placeholder="Phone" required>
-                    <input class="underline block" placeholder="Address">
 
-                    <span class="required">* Required fields</span>
+                    <span class="required-text">* Required fields</span>
                 </div>
 
                 <div class="right-column">
-                    <select class="underline block">
-                        <option>How did you hear about us</option>
+                    <label for="hear-from">How did you hear about us</label>
+                    <select id="hear-from"class="block">
                         <option value="friends">Friends</option>
                         <option value="advertisement">Advertisement</option>
                         <option value="internet">Internet</option>
                         <option value="other">Other variant</option>
                     </select>
 
-                    <select class="underline block">
-                        <option>What are you looking for</option>
+                    <label for="bed" class="label2">What are you looking for</label>
+                    <select id="bed" class="block">
                         <option value="1">1 bed appartament</option>
                         <option value="2">2 bed appartament</option>
                         <option value="3">3 bed appartament</option>
                     </select>
 
-                    <textarea class="underline block" name="textarea" placeholder="Questions / Comments" cols="30" rows="8"></textarea>
+                    <textarea class="underline block" name="textarea" placeholder="Questions / Comments" cols="30" rows="10"></textarea>
 
                     <button type="submit">Send enquiry</button>
                 </div>
             </form>
-
-            <div class="dash">
-
-
-
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-</div>
-
-
-            <div class="circle"></div>
-
         </footer>
+
+        <div class="chess">
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="circle"></div>
 
 </body>
 </html>
