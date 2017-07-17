@@ -182,7 +182,7 @@ main {
     text-transform: uppercase;
     color: #848486;
     letter-spacing: 0.15em;
-    /* Трансформируем текст */
+    /* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ */
     transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
@@ -676,3 +676,75 @@ ul:nth-child(2n+1) li:nth-child(2n) {
     background: radial-gradient(circle, #fff, #000);
 }
 */
+
+.circle {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: radial-gradient(circle closest-corner at 25px 25px, #fff, #000);
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(45deg, #f8a261, #6e9fc9), url(../images/interior-1026440_1920.jpg);
+    background-blend-mode: overlay;
+
+}
+/*
+.gradient {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: radial-gradient(at bottom right, rgba(136, 0, 21, 0.9), rgba(12, 5, 36, 0.4)),
+    radial-gradient(at top, blue, #fff);
+    transition: background 1s ease;
+}
+.gradient:hover {
+    /*background:radial-gradient(at bottom right, rgba(255, 255, 0, 0.4), rgba(255, 0, 0, 0.6)),
+    radial-gradient(at top, green, #fff);
+    background: url(../images/border-image.jpg);
+
+}
+*/
+.gradient {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+background: gold;
+box-shadow: 0 -200px 100px -120px crimson inset;
+animation: background 3s infinite alternate;
+}
+
+@keyframes background {
+    50% {
+        background: skyblue;
+        box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+}
+
+
+.transition {
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s ease-in 0.5s;
+    background-color: yellow;
+    animation: move 5s infinite alternate;
+}
+.transition:hover {
+    background-color: red;
+    opacity: 0.5;
+}
+
+@keyframes move{
+    25%{
+         margin-left: 25%;
+     }
+    50%{
+        margin-left: 50%;
+    }
+    75%{
+        margin-left: 75%;
+    }
+}
