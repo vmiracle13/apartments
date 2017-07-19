@@ -1,0 +1,99 @@
+body {
+    height: 100%;
+}
+
+.wr {
+    min-height: 100%;
+}
+
+.centre {
+    width: 20%;
+    height: 20%;
+    background-color: brown;
+    /*position: absolute;
+    top: 1%;
+    left: 35%;*/
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.centre div {
+    min-width: 72px;
+    width: 26%;
+    height: 26%;
+    margin: 2.8%;
+    background-color: darkseagreen;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.centre .one {
+    z-index: 0;
+    background-color: orange;
+}
+
+.centre .five {
+    visibility: hidden;
+}
+
+.centre .nine{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    background-color: blue;
+}
+
+.float {
+    width: 20%;
+    height: 30%;
+    background-color: lightskyblue;
+    /*position: absolute;
+    top: 30%;
+    left: 35%;*/
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 5%;
+}
+
+.float div {
+    min-width: 72px;
+    width: 26%;
+    height: 26%;
+    margin: 2.8%;
+    background-color: darkseagreen;
+    border: 1px solid black;
+    float: left;
+    z-index: 1;
+}
+
+.float .one {
+    z-index: 0;
+    background-color: orange;
+}
+
+.float .five  {
+    display: none;
+}
+
+.float .nine{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    background-color: blue;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to bottom right, #fff, grey);
+    border: 3px dashed darkblue;
+    margin-bottom: -200px;
+    height: 200px;
+}

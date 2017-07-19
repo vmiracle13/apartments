@@ -135,7 +135,7 @@ nav span:nth-of-type(n + 4) {
 
 main {
     background-color: #1a1a22;
-    padding: 0 7%;
+    padding: 0 7% 7% 7%;
 }
 
 .bgimg {
@@ -144,7 +144,6 @@ main {
     background: url(../images/o2-tower-2289697_1920.jpg) 0 0 no-repeat;
     box-shadow: inset 0px 0px 100px 50px rgba(0,0,0,0.9);
     opacity: 0.1;
-    margin: 0 auto;
 }
 
 .border {
@@ -387,7 +386,7 @@ hr {
     position: relative;
     width: 1200px;
     height: 200px;
-    padding: 10% 0;
+    margin: 10% 0;
 }
 
 .carousel .left-control-btn, .right-control-btn {
@@ -827,3 +826,45 @@ box-shadow: 0 -200px 100px -120px crimson inset;
     background: url(../images/border-image.jpg);
 }
 */
+
+.first, .second {
+    text-align: center;
+}
+
+.first div {
+    float: left;
+    height: 20px;
+    background-color: lawngreen;
+    width: 24.9%;
+    border-right: 1px solid darkslategray;
+}
+
+.first div:last-of-type {
+    border-right: none;
+}
+
+.second div {
+    background-color: green;
+    float: left;
+    height: 20px;
+    width: 33.1%;
+    border-right: 1px solid darkslategray;
+}
+
+.second div:last-of-type {
+    border-right: none;
+}
+
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: sticky;
+    top: 50px;
+
+
+}
+
+.added a {
+    color: black;
+}
