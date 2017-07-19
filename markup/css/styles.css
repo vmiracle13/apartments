@@ -156,13 +156,13 @@ main {
     top: 25%;
 }
 
-
 .line {
     position: absolute;
     top: 30%;
     left: 74%;
     border-left: 3px solid #fff;
     height: 25%;
+    transition: height 1s ease, top 1s ease;
 }
 
 .main-layout {
@@ -182,7 +182,6 @@ main {
     text-transform: uppercase;
     color: #848486;
     letter-spacing: 0.15em;
-    /* �������������� ����� */
     transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
@@ -193,17 +192,46 @@ main {
     position: absolute;
     top: 32.5%;
     left: 49%;
+
+}
+
+.right-img-position:hover + .right-comment{
+
+    background-color: orange;
 }
 
 .left-comment {
     position: absolute;
-    top: 60%;
+    top: 60.3%;
     left: 43%;
+    transition: background-color 1s ease, padding 1s ease, font-size 1s ease, top 1.5s ease, left 1.5s ease, font-size 1s ease;
+}
+
+.left-img-position:hover ~ .left-comment {
+    top: 58.5%;
+    left: 41.37%;
+    background-color: #ef7d1d;
+    font-size: 1em;
+    padding: 1%;
+}
+
+.right-img-position {
+    float: right;
+    margin-bottom: 15%;
 }
 
 .right-photo {
-    float: right;
-    margin-bottom: 15%;
+    overflow: hidden;
+    transition: all 1s ease-out;
+}
+
+.right-photo:hover, .left-photo:hover {
+    transform: scale(1.2);
+}
+
+.right-img-position:hover ~ .line {
+    top: 43%;
+    height: 13%;
 }
 
 .left {
@@ -235,10 +263,15 @@ main {
     margin-bottom: 10%;
 }
 
-.left-photo {
+.left-img-position {
     float: left;
     margin-right: 28%;
     margin-bottom: 5%;
+}
+
+.left-photo {
+    overflow: hidden;
+    transition: all 1s ease-out;
 }
 
 .video-block {
@@ -341,7 +374,6 @@ hr {
     display: inline;
     vertical-align: middle;
     margin-right: 5%;
-
 }
 
 
@@ -349,6 +381,85 @@ hr {
 
 
 
+
+
+.carousel {
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    padding: 10% 0;
+}
+
+.carousel .left-control-btn, .right-control-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.left-control-btn {
+    background: url(../images/left-arrow.png) 0 0 no-repeat;
+    position: absolute;
+    top: 46%;
+    left: 5%;
+}
+
+.right-control-btn {
+    background: url(../images/right-arrow.png) 0 0 no-repeat;
+    position: absolute;
+    top: 46%;
+    left: 90%;
+}
+
+.right-control-btn:hover .gallery>ul {
+    margin-left: 250px;
+}
+
+.gallery {
+    overflow: hidden;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.gallery ul {
+    width: 9999px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 250ms ease;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 246px;
+    height: 200px;
+    transition: all 1s ease-out;
+    opacity: 0.2;
+    filter: blur(3px);
+}
+
+.gallery li:hover {
+
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.3) inset;
+}
+
+.gallery li:hover img {
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    z-index: 10;
+    width: 500px;
+    height: 400px;
+    opacity: 1;
+    filter: none;
+    box-shadow: 0 0 15px rgb(255,255,255);
+}
 
 
 
@@ -675,7 +786,7 @@ ul:nth-child(2n+1) li:nth-child(2n) {
     border-radius: 50px;
     background: radial-gradient(circle, #fff, #000);
 }
-*/
+/*class work on 17.07.2017
 
 .circle {
     margin: 50px;
@@ -692,6 +803,15 @@ ul:nth-child(2n+1) li:nth-child(2n) {
     background-blend-mode: overlay;
 
 }
+
+.gradient {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+background: gold;
+box-shadow: 0 -200px 100px -120px crimson inset;
+
+
 /*
 .gradient {
     width: 100px;
@@ -705,46 +825,5 @@ ul:nth-child(2n+1) li:nth-child(2n) {
     /*background:radial-gradient(at bottom right, rgba(255, 255, 0, 0.4), rgba(255, 0, 0, 0.6)),
     radial-gradient(at top, green, #fff);
     background: url(../images/border-image.jpg);
-
 }
 */
-.gradient {
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-background: gold;
-box-shadow: 0 -200px 100px -120px crimson inset;
-animation: background 3s infinite alternate;
-}
-
-@keyframes background {
-    50% {
-        background: skyblue;
-        box-shadow: 0 -200px 100px -100px yellowgreen inset;
-    }
-}
-
-
-.transition {
-    width: 100px;
-    height: 100px;
-    transition: background-color 2s ease-in 0.5s;
-    background-color: yellow;
-    animation: move 5s infinite alternate;
-}
-.transition:hover {
-    background-color: red;
-    opacity: 0.5;
-}
-
-@keyframes move{
-    25%{
-         margin-left: 25%;
-     }
-    50%{
-        margin-left: 50%;
-    }
-    75%{
-        margin-left: 75%;
-    }
-}
