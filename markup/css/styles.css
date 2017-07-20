@@ -134,8 +134,9 @@ nav span:nth-of-type(n + 4) {
 }
 
 main {
-    background-color: #1a1a22;
+    background-color: #171926;
     padding: 0 7%;
+    overflow: hidden;
 }
 
 .bgimg {
@@ -291,7 +292,8 @@ main {
     display: flex;
     flex-direction: row;
     box-shadow: inset 0px 0px 500px 360px rgba(26, 26, 34, 0.9);
-    background-color: #384c67;
+    background-color: #171926;
+    margin-bottom: 10%;
 }
 
 .left-flex-block {
@@ -377,105 +379,158 @@ hr {
 }
 
 
-
-
-
-
-
-
-.carousel {
+.carousel-wrap {
+    height: 805px;
+    border: 1px solid #f17c1d;
     position: relative;
-    width: 1200px;
-    height: 200px;
-    padding: 10% 0;
 }
 
-.carousel .left-control-btn, .right-control-btn {
+.big-carousel {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    transition: all 1.5s ease-out;
+}
+
+.btn {
+    position: absolute;
+    top: 55%;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration:none;
+    background-image: linear-gradient(#f17c1d, #ff531d);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.9;
+    z-index: 10;
+    opacity: 0;
+}
+
+.left-control-btn, .right-control-btn {
     width: 40px;
     height: 40px;
-    padding: 0;
 }
 
 .left-control-btn {
-    background: url(../images/left-arrow.png) 0 0 no-repeat;
-    position: absolute;
-    top: 46%;
-    left: 5%;
+    left: 0;
 }
 
 .right-control-btn {
-    background: url(../images/right-arrow.png) 0 0 no-repeat;
-    position: absolute;
-    top: 46%;
-    left: 90%;
-}
-
-.right-control-btn:hover .gallery>ul {
-    margin-left: 250px;
+    right: -3%;
 }
 
 .gallery {
-    overflow: hidden;
-    width: 1200px;
-    height: 200px;
-    margin: 0 auto;
-}
-
-.gallery ul {
-    width: 9999px;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    transition: margin-left 250ms ease;
+    display: flex;
+    flex-direction: row;
+    left: 3%;
+    position: relative;
 }
 
 .gallery li {
-    display: inline-block;
-    width: 250px;
-    height: 200px;
-    overflow: hidden;
+    position: relative;
+    width: 840px;
+    height: 560px;
 }
 
 .gallery img {
-    width: 246px;
-    height: 200px;
-    transition: all 1s ease-out;
-    opacity: 0.2;
+    height: 560px;
+    vertical-align: top;
+    transition: all 2s ease-out;
+    opacity: 0.6;
     filter: blur(3px);
 }
 
-.gallery li:hover {
-
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.3) inset;
+.gallery .btn:active {
+    transform: translate(0, 2px);
 }
 
-.gallery li:hover img {
+.small-carousel {
     position: absolute;
-    top: 5%;
-    left: 27%;
+    top: 85%;
+    left: 18%;
+    display: flex;
+    flex-direction: row;
     z-index: 10;
-    width: 500px;
-    height: 400px;
-    opacity: 1;
-    filter: none;
-    box-shadow: 0 0 15px rgb(255,255,255);
 }
 
+.small-carousel li {
+    margin-right: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
+}
+
+.small-carousel li:last-of-type {
+    margin-right: 0;
+}
+
+.small-carousel img {
+    height: 75px;
+    width: 100px;
+    vertical-align: top;
+}
+
+#item1:target ~ .big-carousel .gallery li:nth-of-type(1) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+                                                                            width: 1020px; height: 660px; position: absolute;
+                                                                            top: 0; left: -10%; z-index: 5;
+    box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item1:target ~ .big-carousel .gallery li:nth-of-type(1) .btn           { opacity: 1; }
+#item1:target ~ .small-carousel li:nth-of-type(1)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item1:target ~ .small-carousel li:nth-of-type(1) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item1:target ~ .big-carousel                                           { left: 0; }
 
 
+#item2:target ~ .big-carousel .gallery li:nth-of-type(2) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item2:target ~ .big-carousel .gallery li:nth-of-type(2) .btn           { opacity: 1; }
+#item2:target ~ .small-carousel li:nth-of-type(2)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item2:target ~ .small-carousel li:nth-of-type(2) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item2:target ~ .big-carousel                                           { left: -70%; }
 
 
+#item3:target ~ .big-carousel .gallery li:nth-of-type(3) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item3:target ~ .big-carousel .gallery li:nth-of-type(3) .btn           { opacity: 1; }
+#item3:target ~ .small-carousel li:nth-of-type(3)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item3:target ~ .small-carousel li:nth-of-type(3) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item3:target ~ .big-carousel                                           { left: -140%; }
+
+#item4:target ~ .big-carousel .gallery li:nth-of-type(4) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item4:target ~ .big-carousel .gallery li:nth-of-type(4) .btn           { opacity: 1; }
+#item4:target ~ .small-carousel li:nth-of-type(4)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item4:target ~ .small-carousel li:nth-of-type(4) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item4:target ~ .big-carousel                                           { left: -210%; }
 
 
+#item5:target ~ .big-carousel .gallery li:nth-of-type(5) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item5:target ~ .big-carousel .gallery li:nth-of-type(5) .btn           { opacity: 1; }
+#item5:target ~ .small-carousel li:nth-of-type(5)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item5:target ~ .small-carousel li:nth-of-type(5) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item5:target ~ .big-carousel                                           { left: -280%; }
 
 
+#item6:target ~ .big-carousel .gallery li:nth-of-type(6) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item6:target ~ .big-carousel .gallery li:nth-of-type(6) .btn           { opacity: 1; }
+#item6:target ~ .small-carousel li:nth-of-type(6)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item6:target ~ .small-carousel li:nth-of-type(6) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item6:target ~ .big-carousel                                           { left: -350%; }
 
 
-
-
-
-
-
+#item7:target ~ .big-carousel .gallery li:nth-of-type(7) img            { opacity: 1; filter: none; border-bottom: 3px solid #fff;
+    width: 1020px; height: 660px; position: absolute;
+    top: 0; left: -10%; z-index: 5; box-shadow: 0 0 20px rgba(255,255,255,0.7);}
+#item7:target ~ .big-carousel .gallery li:nth-of-type(7) .btn           { opacity: 1; }
+#item7:target ~ .small-carousel li:nth-of-type(7)	                    { opacity: 1; background-color: rgba(0, 0, 0, 0.35);  }
+#item7:target ~ .small-carousel li:nth-of-type(7) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
+#item7:target ~ .big-carousel                                           { left: -420%; }
 
 footer {
     padding: 7% 8% 11%;
