@@ -23,7 +23,7 @@ a {
 
 h4 {
     font-size: 2em;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -52,7 +52,7 @@ header h1 a {
 }
 
 h2 {
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 2em;
     letter-spacing: 0.3em;
     margin-bottom: 1%;
@@ -66,7 +66,7 @@ h2 {
 
 nav {
     font-size: 0.65em;
-    font-family: "Trade Gothic Bold";
+    font-family: "Trade Gothic Bold", sans-serif;
     letter-spacing: 0.2em;
     margin-bottom: 16%;
     overflow: hidden;
@@ -92,32 +92,52 @@ nav span:nth-of-type(n + 4) {
     margin: 0 auto;
 }
 
+.upper .bottom-left, .bottom-right {
+    vertical-align: top;
+    padding: 250px 0 0;
+}
+
 .bottom-left {
     border-left: none;
     border-bottom: none;
-    padding: 0;
+    text-align: right;
 }
 
 .bottom-left a {
-    display: block;
-    background: url(../images/finbar.jpg) 0 0 no-repeat;
-    width: 198px;
+    display: inline-block;
     height: 50px;
+}
+
+.bottom-left a img {
+    width: auto;
+    height: 100%;
+    vertical-align: top;
 }
 
 .bottom-right {
     border-right: none;
     border-bottom: none;
+    text-align: left;
 }
 
 .bottom-right a {
-    display: block;
     background-color: #ef7d1d;
-    padding: 8% 0 8% 24%;
-    text-align: left;
-    font-family: "Trade Gothic Condensed";
+    padding: 16px 40px;
+    font-family: "Trade Gothic Condensed", sans-serif;
     letter-spacing: 0.2em;
     font-size: 0.9em;
+    display: inline-block;
+}
+
+.bottom-right a:before {
+    display: inline-block;
+    content: " ";
+    background: url(../images/comment.jpg) 0 0 no-repeat;
+    width: 16px;
+    height: 13px;
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
 }
 
 .background-advantages {
@@ -131,6 +151,15 @@ nav span:nth-of-type(n + 4) {
     width: 1400px;
     height: 1000px;
     z-index: -100;
+}
+
+.glow {
+    background: radial-gradient(circle at 60% 50%, #6d95d3, #001629, #001629);
+    opacity: 0.35;
+    width: 88.5%;
+    height: 140%;
+    position: absolute;
+    top: 280%;
 }
 
 main {
@@ -178,7 +207,7 @@ main {
 }
 
 .main-layout span {
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 0.7em;
     text-transform: uppercase;
     color: #848486;
@@ -187,25 +216,26 @@ main {
     -ms-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
+    transition: all 1s ease;
+    position: absolute;
 }
 
 .right-comment {
-    position: absolute;
     top: 32.5%;
     left: 49%;
-
 }
 
 .right-img-position:hover + .right-comment{
-
-    background-color: orange;
+    background-color: #ef7d1d;
+    font-size: 1em;
+    padding: 1%;
+    top: 31.5%;
+    left: 44.9%;
 }
 
 .left-comment {
-    position: absolute;
     top: 60.3%;
     left: 43%;
-    transition: background-color 1s ease, padding 1s ease, font-size 1s ease, top 1.5s ease, left 1.5s ease, font-size 1s ease;
 }
 
 .left-img-position:hover ~ .left-comment {
@@ -256,7 +286,7 @@ main {
     display: inline-block;
     text-align: center;
     padding: 2%;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     letter-spacing: 0.15em;
 }
 
@@ -291,7 +321,7 @@ main {
 .advantages {
     display: flex;
     flex-direction: row;
-    box-shadow: inset 0px 0px 500px 360px rgba(26, 26, 34, 0.9);
+    box-shadow: inset 0 0 500px 360px rgba(26, 26, 34, 0.9);
     background-color: #171926;
     margin-bottom: 10%;
 }
@@ -320,7 +350,7 @@ main {
     display: inline-block;
     width: 18%;
     margin-right: 8%;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 0.8em;
     vertical-align: text-top;
     text-align: center;
@@ -361,7 +391,7 @@ hr {
 
 .list2 li {
     display: block;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 0.8em;
     border-bottom: 1px solid #fff;
     padding-bottom: 5%;
@@ -545,7 +575,7 @@ footer h4 {
 }
 
 table {
-    font-family: "Trade Gothic Bold";
+    font-family: "Trade Gothic Bold", sans-serif;
     width: 60%;
 }
 
@@ -562,7 +592,7 @@ table td {
 
 .table-text-decoration {
     letter-spacing: 0.2em;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 1.1em;
 }
 
@@ -590,12 +620,8 @@ form {
     margin-right: 10%;
 }
 
-.required:after {
-    content: " ";
-    display: inline-block;
-    background: url(../images/asteriks.jpg) 0 0 no-repeat;
-    width: 6px;
-    height: 5px;
+.required {
+    background: url(../images/asteriks.jpg) 98% 45% no-repeat;
 }
 
 .left-column {
@@ -665,7 +691,7 @@ form input {
     padding: 5.5% 0;
     margin-bottom: 4%;
     width: 100%;
-    font-family: "Trade Gothic";
+    font-family: "Trade Gothic", sans-serif;
     color: #fff;
 }
 
@@ -695,7 +721,7 @@ form select {
     width: 74%;
     margin-bottom: 2%;
     color: #fff;
-    font-family: "Trade Gothic";
+    font-family: "Trade Gothic", sans-serif;
     border: 1px solid #373a49;
     background-color: #171926;
 }
@@ -745,11 +771,11 @@ form textarea {
 
 form textarea::-moz-placeholder {
     color: #fff;
-    font-family: "Trade Gothic";
+    font-family: "Trade Gothic", sans-serif;
 }
 form textarea::-webkit-input-placeholder  {
     color: #fff;
-    font-family: "Trade Gothic";
+    font-family: "Trade Gothic", sans-serif;
 }
 
 form button {
@@ -785,7 +811,7 @@ button {
     letter-spacing: 0.15em;
     text-transform: uppercase;
     padding: 8% 15%;
-    font-family: "Trade Gothic Condensed";
+    font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 1.1em;
 }
 

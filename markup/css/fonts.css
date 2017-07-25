@@ -2,21 +2,26 @@
 
 @font-face {
     font-family: 'Trade Gothic';
-    src: url('fonts/TradeGothic/trade-gothic-lt-1361519976/trade-gothic-lt-1361519976.ttf') format('truetype');
+    src: url('fonts/TradeGothic/TradeGothicLight.eot') format('embedded-opentype');
+    src: url('fonts/TradeGothic/TradeGothicLight.ttf') format('truetype'),
+        url('fonts/TradeGothic/TradeGothicLight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Trade Gothic Bold';
-    src: url('fonts/TradeGothic/tradegothicltstd-bd2.otf') format('opentype');
+    src: url('fonts/TradeGothic/TradeGothicLtstdBold.eot') format('embedded-opentype');
+    src: url('fonts/TradeGothic/TradeGothicLtstdBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Trade Gothic Condensed';
-    src: url('fonts/TradeGothic/trade-gothic-bold-condensed-no-20-1361519978/trade-gothic-bold-condensed-no-20-1361519978.ttf') format('truetype');
+    src: url('fonts/TradeGothic/TradeGothicBoldCondensed.eot') format('embedded-opentype');
+    src: url('fonts/TradeGothic/TradeGothicBoldCondensed.ttf') format('truetype'),
+        url(fonts/TradeGothic/TradeGothicBoldCondensed.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-stretch: condensed;
