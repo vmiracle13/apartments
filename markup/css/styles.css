@@ -72,19 +72,20 @@ nav {
     overflow: hidden;
 }
 
-nav span {
+nav a {
+    display: inline-block;
     margin-right: 5.3%;
 }
 
-nav span:nth-of-type(4) {
+nav a:nth-of-type(4) {
     margin-right: 0;
 }
 
-nav span:nth-of-type(-n + 3) {
+nav a:nth-of-type(-n + 3) {
     float: left;
 }
 
-nav span:nth-of-type(n + 4) {
+nav a:nth-of-type(n + 4) {
     float: right;
 }
 
@@ -140,41 +141,28 @@ nav span:nth-of-type(n + 4) {
     margin-right: 10px;
 }
 
-.background-advantages {
-    position: absolute;
-    top: 300%;
-    left: 5.8%;
-}
-
-.background-advantages img {
-    opacity: 0.05;
-    width: 1400px;
-    height: 1000px;
-    z-index: -100;
-}
-
-.glow {
-    background: radial-gradient(circle at 60% 50%, #6d95d3, #001629, #001629);
-    opacity: 0.35;
-    width: 88.5%;
-    height: 140%;
-    position: absolute;
-    top: 280%;
+.intro {
+    position: relative;
 }
 
 main {
     background-color: #171926;
     padding: 0 7%;
     overflow: hidden;
+    /* for IE */
+    display: block;
 }
 
 .bgimg {
     width: 400px;
     height: 934px;
     background: url(../images/o2-tower-2289697_1920.jpg) 0 0 no-repeat;
-    box-shadow: inset 0px 0px 100px 50px rgba(0,0,0,0.9);
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,0.9);
     opacity: 0.1;
-    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    top: 1%;
+    left: 32%;
 }
 
 .border {
@@ -182,23 +170,25 @@ main {
     width: 350px; /*400px */
     height: 580px; /* 680px */
     position: absolute;
-    left: 38%;
+    left: 35%;
     top: 25%;
+    z-index: 5;
 }
 
 .line {
     position: absolute;
     top: 30%;
-    left: 74%;
+    right: 32%;
     border-left: 3px solid #fff;
     height: 25%;
     transition: height 1s ease, top 1s ease;
 }
 
 .main-layout {
-    margin-top: -60%;
     overflow: hidden;
     position: relative;
+    z-index: 5;
+    padding-top: 5%;
 }
 
 .main-layout img {
@@ -221,34 +211,38 @@ main {
 }
 
 .right-comment {
-    top: 32.5%;
-    left: 49%;
+    position: absolute;
+    bottom: 12%;
+    left: -10%;
 }
 
-.right-img-position:hover + .right-comment{
+.right-img-position:hover .right-comment{
     background-color: #ef7d1d;
     font-size: 1em;
     padding: 1%;
-    top: 31.5%;
-    left: 44.9%;
+    bottom: 6.7%;
+    left: -20.4%;
 }
 
 .left-comment {
-    top: 60.3%;
-    left: 43%;
+    position: absolute;
+    top: 11%;
+    right: -11%;
 }
 
-.left-img-position:hover ~ .left-comment {
-    top: 58.5%;
-    left: 41.37%;
+.left-img-position:hover .left-comment {
+    top: 7%;
+    right: -22%;
     background-color: #ef7d1d;
     font-size: 1em;
     padding: 1%;
+    width: 27%;
 }
 
 .right-img-position {
     float: right;
     margin-bottom: 15%;
+    position: relative;
 }
 
 .right-photo {
@@ -261,18 +255,18 @@ main {
 }
 
 .right-img-position:hover ~ .line {
-    top: 43%;
+    top: 45%;
     height: 13%;
 }
 
 .left {
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 .main-layout article {
     width: 25%;
     overflow: hidden;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 
 .main-layout h4 {
@@ -281,7 +275,6 @@ main {
 }
 
 .main-layout a {
-    width: 12%;
     background-color: #ef7d1d;
     display: inline-block;
     text-align: center;
@@ -290,14 +283,11 @@ main {
     letter-spacing: 0.15em;
 }
 
-.main-layout p {
-    margin-bottom: 10%;
-}
-
 .left-img-position {
     float: left;
-    margin-right: 28%;
+    margin-right: 22%;
     margin-bottom: 5%;
+    position: relative;
 }
 
 .left-photo {
@@ -324,6 +314,29 @@ main {
     box-shadow: inset 0 0 500px 360px rgba(26, 26, 34, 0.9);
     background-color: #171926;
     margin-bottom: 10%;
+    position: relative;
+}
+
+.glow {
+    background: radial-gradient(circle at 60% 50%, #6d95d3, #001629, #001629);
+    opacity: 0.35;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -8%;
+    z-index: 10;
+}
+
+.background-advantages {
+    position: absolute;
+    top: 10%;
+    left: -9%;
+}
+
+.background-advantages img {
+    opacity: 0.05;
+    z-index: 0;
 }
 
 .left-flex-block {
@@ -335,7 +348,7 @@ main {
 }
 
 .left-flex-block p {
-    margin-bottom: 12%;
+    margin-bottom: 8%;
 }
 
 .title1 {
@@ -343,35 +356,36 @@ main {
 }
 
 .list1 {
-    margin-bottom: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
+    font-family: "Trade Gothic Condensed", sans-serif;
+    justify-content: space-between;
 }
 
 .list1 li {
-    display: inline-block;
-    width: 18%;
-    margin-right: 8%;
-    font-family: "Trade Gothic Condensed", sans-serif;
-    font-size: 0.8em;
-    vertical-align: text-top;
+    width: 22%;
+    margin-right: 3%;
+    margin-bottom: 10%;
+}
+
+.list1 i {
+    font-size: 3em;
     text-align: center;
-}
-
-.list1 li:nth-of-type(4n) {
-    margin-right: 0;
-}
-
-.list1 li:nth-of-type(-n + 4) {
-    margin-bottom: 8%;
-}
-
-.list1 li img {
     display: block;
-    margin: 0 auto 20% auto;
+    padding: 10% 0;
+    width: 60%;
+    margin: 0 auto 15%;
+}
+
+.list1 span {
+    display: block;
+    text-align: center;
 }
 
 .bg-advantages {
     width: 540px;
-    height: 1010px;
+    z-index: 5;
 }
 
 hr {
@@ -394,7 +408,7 @@ hr {
     font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 0.8em;
     border-bottom: 1px solid #fff;
-    padding-bottom: 5%;
+    padding: 2% 0 7%;
     margin: 0 4% 4% 0;
 }
 
@@ -402,12 +416,17 @@ hr {
     margin-right: 0;
 }
 
-.list2 img {
-    display: inline;
-    vertical-align: middle;
-    margin-right: 5%;
+.list2 i {
+    display: inline-block;
+    width: 10%;
+    font-size: 1.5em;
 }
 
+.list2 li span {
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: 17%;
+}
 
 .carousel-wrap {
     height: 805px;
@@ -461,7 +480,7 @@ hr {
 .gallery li {
     position: relative;
     width: 840px;
-    height: 560px;
+    height: auto;
 }
 
 .gallery img {
@@ -737,10 +756,6 @@ form select {
     display: inline-block;
     padding: 2% 0;
     margin-bottom: 2.8%;
-}
-
-.right-column select option {
-    padding: 30%;
 }
 
 .right-column span {
