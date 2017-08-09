@@ -4,16 +4,15 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    font: 100% "Trade Gothic";
+    font: 1em/1.2 "Trade Gothic", sans-serif;
     color: #fff;
 }
 
 .uppercase {
     text-transform: uppercase;
 }
-
-.clearfix {
-    clear: both;
+.block {
+    display: block;
 }
 
 a {
@@ -34,7 +33,6 @@ header {
     background: url(../images/170302153930-new-apartment-architecture-3-super-169.jpg) 100% 30% no-repeat;
     background-size: cover;
     text-align: center;
-
 }
 
 h1 {
@@ -63,37 +61,25 @@ h2 {
     margin-bottom: 3.5%;
 }
 
-
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 0.65em;
     font-family: "Trade Gothic Bold", sans-serif;
     letter-spacing: 0.2em;
     margin-bottom: 16%;
-    overflow: hidden;
 }
 
-nav a {
-    display: inline-block;
-    margin-right: 5.3%;
+nav a:nth-of-type(3) {
+    margin-right: 20%;
 }
 
-nav a:nth-of-type(4) {
-    margin-right: 0;
-}
-
-nav a:nth-of-type(-n + 3) {
-    float: left;
-}
-
-nav a:nth-of-type(n + 4) {
-    float: right;
-}
-
-.upper {
+.upper-table {
     margin: 0 auto;
 }
 
-.upper .bottom-left, .bottom-right {
+.upper-table .bottom-left, .bottom-right {
     vertical-align: top;
     padding: 250px 0 0;
 }
@@ -118,16 +104,23 @@ nav a:nth-of-type(n + 4) {
 .bottom-right {
     border-right: none;
     border-bottom: none;
-    text-align: left;
+}
+
+.bottom-right .backgr-a {
+    background-color: #ef7d1d;
+    width: 205px;
+    height: 50px;
+    max-width: 100%;
 }
 
 .bottom-right a {
-    background-color: #ef7d1d;
-    padding: 16px 40px;
+    display: block;
     font-family: "Trade Gothic Condensed", sans-serif;
     letter-spacing: 0.2em;
     font-size: 0.9em;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 7% 0;
 }
 
 .bottom-right a:before {
@@ -147,7 +140,7 @@ nav a:nth-of-type(n + 4) {
 
 main {
     background-color: #171926;
-    padding: 0 7%;
+    padding: 0 7% 7%;
     overflow: hidden;
     /* for IE */
     display: block;
@@ -171,17 +164,16 @@ main {
     height: 580px; /* 680px */
     position: absolute;
     left: 35%;
-    top: 25%;
+    top: 20%;
     z-index: 5;
 }
 
 .line {
     position: absolute;
-    top: 30%;
-    right: 32%;
+    top: 28%;
+    right: 29.5%;
     border-left: 3px solid #fff;
     height: 25%;
-    transition: height 1s ease, top 1s ease;
 }
 
 .main-layout {
@@ -193,7 +185,6 @@ main {
 
 .main-layout img {
     width: 550px;
-    height: 380px;
 }
 
 .main-layout span {
@@ -210,10 +201,58 @@ main {
     position: absolute;
 }
 
+.main-layout h4 {
+    margin-bottom: 7%;
+    width: 70%;
+}
+
+.main-layout a {
+    background-color: #ef7d1d;
+    display: inline-block;
+    text-align: center;
+    padding: 5% 15%;
+    font-family: "Trade Gothic Condensed", sans-serif;
+    letter-spacing: 0.15em;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.left {
+    flex-basis: 30%;
+    margin-top: 8%;
+}
+
+.right {
+    flex-basis: 30%;
+}
+
+.right p {
+    margin-bottom: 11%;
+}
+
+.left, .right-img-position {
+    margin-bottom: 10%;
+}
+
+.right-img-position,.left-img-position {
+    position: relative;
+}
+
 .right-comment {
     position: absolute;
     bottom: 12%;
     left: -10%;
+}
+
+.left-comment {
+    position: absolute;
+    top: 13%;
+    right: -11%;
 }
 
 .right-img-position:hover .right-comment{
@@ -224,14 +263,8 @@ main {
     left: -20.4%;
 }
 
-.left-comment {
-    position: absolute;
-    top: 11%;
-    right: -11%;
-}
-
 .left-img-position:hover .left-comment {
-    top: 7%;
+    top: 9%;
     right: -22%;
     background-color: #ef7d1d;
     font-size: 1em;
@@ -239,60 +272,13 @@ main {
     width: 27%;
 }
 
-.right-img-position {
-    float: right;
-    margin-bottom: 15%;
-    position: relative;
-}
-
-.right-photo {
+.right-photo, .left-photo {
     overflow: hidden;
     transition: all 1s ease-out;
 }
 
 .right-photo:hover, .left-photo:hover {
     transform: scale(1.2);
-}
-
-.right-img-position:hover ~ .line {
-    top: 45%;
-    height: 13%;
-}
-
-.left {
-    margin-top: 10%;
-}
-
-.main-layout article {
-    width: 25%;
-    overflow: hidden;
-    margin-bottom: 6%;
-}
-
-.main-layout h4 {
-    margin-bottom: 7%;
-    width: 70%;
-}
-
-.main-layout a {
-    background-color: #ef7d1d;
-    display: inline-block;
-    text-align: center;
-    padding: 2%;
-    font-family: "Trade Gothic Condensed", sans-serif;
-    letter-spacing: 0.15em;
-}
-
-.left-img-position {
-    float: left;
-    margin-right: 22%;
-    margin-bottom: 5%;
-    position: relative;
-}
-
-.left-photo {
-    overflow: hidden;
-    transition: all 1s ease-out;
 }
 
 .video-block {
@@ -358,15 +344,21 @@ main {
 .list1 {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 5%;
-    font-family: "Trade Gothic Condensed", sans-serif;
     justify-content: space-between;
+    /*for IE*/
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    margin-bottom: 5%;
 }
 
 .list1 li {
-    width: 22%;
-    margin-right: 3%;
+    flex: 0 0 25%;
+    /*for IE*/
+    -ms-flex: 0 0 25%;
     margin-bottom: 10%;
+    font-family: "Trade Gothic Condensed", sans-serif;
 }
 
 .list1 i {
@@ -381,6 +373,7 @@ main {
 .list1 span {
     display: block;
     text-align: center;
+    font-size: 1em;
 }
 
 .bg-advantages {
@@ -400,20 +393,24 @@ hr {
 }
 
 .list2 {
-    column-count: 2;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*for IE*/
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    height: 14%;
 }
 
 .list2 li {
-    display: block;
     font-family: "Trade Gothic Condensed", sans-serif;
     font-size: 0.8em;
     border-bottom: 1px solid #fff;
-    padding: 2% 0 7%;
-    margin: 0 4% 4% 0;
-}
-
-.list2 li:nth-of-type(n + 4) {
-    margin-right: 0;
+    padding: 4% 0;
+    margin-right: 5%;
+    display: block;
+    width: 40%;
 }
 
 .list2 i {
@@ -423,15 +420,14 @@ hr {
 }
 
 .list2 li span {
-    display: inline-block;
-    margin-left: 5%;
-    vertical-align: 17%;
+    margin-left: 10%;
 }
 
 .carousel-wrap {
     height: 805px;
     border: 1px solid #f17c1d;
     position: relative;
+    margin-bottom: 10%;
 }
 
 .big-carousel {
@@ -581,18 +577,6 @@ hr {
 #item7:target ~ .small-carousel li:nth-of-type(7) img                   { border-bottom: 3px solid #ef7d1d; margin-top: -10px; }
 #item7:target ~ .big-carousel                                           { left: -420%; }
 
-footer {
-    padding: 7% 8% 11%;
-    background-color: #171926;
-    font-size: 0.85em;
-    line-height: 1.5;
-    overflow: hidden;
-}
-
-footer h4 {
-    font-size: 1.6em;
-}
-
 table {
     font-family: "Trade Gothic Bold", sans-serif;
     width: 60%;
@@ -604,7 +588,7 @@ table td {
 }
 
 .bottom {
-    margin: 0 auto 10%;
+    margin: 0 auto;
     text-align: center;
     font-size: 1.1em;
 }
@@ -615,18 +599,51 @@ table td {
     font-size: 1.1em;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    /*for IE*/
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    background-color: #171926;
+    font-size: 0.85em;
+    line-height: 1.5;
+    padding: 0 8% 11%;
+}
+
+footer h4 {
+    font-size: 1.6em;
+}
+
+button {
+    background-color: #ef7d1d;
+    border: none;
+    color: #fff;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5% 13%;
+    font-family: "Trade Gothic Condensed", sans-serif;
+}
+
+.underline {
+    background-color: #171926;
+    border: none;
+    border-bottom: 1px solid #373b47;
+    outline: none;
+}
+
 .left-side {
-    float: left;
-    width: 20%;
-    margin-right: 8%;
+    margin-right: 7%;
+    flex: 0 0 20%;
+    /*for IE*/
+    -ms-flex: 0 0 20%;
 }
 
 .left-side h4 {
-    margin-bottom: 35%;
+    margin-bottom: 23%;
 }
 
 .left-side p {
-    text-transform: none;
     margin-bottom: 3.5%;
 }
 
@@ -634,26 +651,68 @@ table td {
     margin-bottom: 15%;
 }
 
-form {
-    overflow: hidden;
-    margin-right: 10%;
+.center {
+    flex: 2 0 auto;
+    /*for IE*/
+    -ms-flex: 2 0 auto;
+    margin-right: 5%;
+}
+
+.center h4 {
+    margin-bottom: 8%;
 }
 
 .required {
     background: url(../images/asteriks.jpg) 98% 45% no-repeat;
 }
 
-.left-column {
-    padding-right: 3%;
-    width: 37%;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: top;
-}
-
 .left-column .required-text {
     text-transform: none;
     color: #878b96;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*for IE*/
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-pack: justify;
+}
+
+.left-column {
+    flex: 0 0 43.6%;
+    /*for IE*/
+    -ms-flex: 0 0 43.6%;
+}
+
+.right-column {
+    flex: 0 0 53%;
+    -ms-flex: 0 0 53%;
+}
+
+form input {
+    width: 100%;
+    padding: 1.5% 0 5.5%;
+    margin-bottom: 4%;
+    font-family: "Trade Gothic", sans-serif;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #373b47;
+    outline: none;
+}
+
+form input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+form input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+form input:focus {
+    border-bottom: 1px solid #f17c1d;
 }
 
 .gender-block {
@@ -662,13 +721,31 @@ form {
     margin-bottom: 7%;
 }
 
+.gender-block:hover {
+    border-bottom: 1px solid #ef7d1d;
+}
+
 .gender-block span {
     margin-bottom: 5%;
 }
 
+.gender-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .gender-block label {
-    margin-right: 5%;
+    padding-right: 5%;
     font-weight: bold;
+}
+
+.gender-block label:first-of-type {
+    flex-basis: 37%;
+}
+
+.gender-block label:last-of-type {
+    flex-basis: 28%;
 }
 
 .gender-block label[for="female"] {
@@ -679,65 +756,32 @@ form {
     color: blue;
 }
 
-.gender-block input:first-of-type {
-    margin-right: 20%;
-}
-
 .gender-block input {
     vertical-align: text-top;
+    width: auto;
+    margin-left: 15%;
 }
 
-.gender-block:hover {
-    border-bottom: 1px solid #ef7d1d;
-}
-
-form h4 {
-    margin-bottom: 7.5%;
-}
-
-.underline {
-    background-color: #171926;
-    border: none;
-    border-bottom: 1px solid #373b47;
-    outline: none;
-}
-
-.block {
+.date {
     display: block;
 }
 
-form input {
-    padding: 5.5% 0;
-    margin-bottom: 4%;
-    width: 100%;
-    font-family: "Trade Gothic", sans-serif;
-    color: #fff;
+.right-column label {
+    display: inline-block;
+    padding: 1.4% 0;
 }
 
-form input::-moz-placeholder {
-    color: #fff;
+.right-column label:first-of-type {
+    margin-bottom: 5%;
 }
-form input::-webkit-input-placeholder {
-    color: #fff;
-}
+.right-column label:last-of-type {
 
-form input:focus {
-    border-bottom: 1px solid #f17c1d;
-}
-
-form .gender {
-    width: auto;
-}
-
-form .date {
-    background-color: #171926;
 }
 
 form select {
     outline: none;
-    display: block;
     padding: 2.8% 0;
-    width: 74%;
+    width: 100%;
     margin-bottom: 2%;
     color: #fff;
     font-family: "Trade Gothic", sans-serif;
@@ -745,46 +789,23 @@ form select {
     background-color: #171926;
 }
 
-.right-column {
-    width: 60%;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-top: 0.5%;
-}
-
-.right-column label {
-    display: inline-block;
-    padding: 2% 0;
-    margin-bottom: 2.8%;
-}
-
-.right-column span {
-    margin-bottom: 2%;
-}
-
-.right-column progress {
-    margin-bottom: 7%;
-}
-
-.right-column .label2 {
-    margin-bottom: 1.2%;
-    padding: 0;
-}
-
-form select:last-of-type {
-    margin-bottom: 3%;
-}
-
 form textarea {
-    display: block;
     margin-bottom: 5%;
-    padding-bottom: 2%;
-    width: 72%;
+    padding: 4% 0;
+    width: 99%;
     color: #fff;
-    line-height: 1.7;
+    font-family: "Trade Gothic", sans-serif;
+    height: 45%;
+    resize: none;
 }
 
 form textarea::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-size: 0.9em;
+    font-family: "Trade Gothic", sans-serif;
+}
+form textarea:-moz-placeholder {
     color: #fff;
     font-family: "Trade Gothic", sans-serif;
 }
@@ -794,41 +815,34 @@ form textarea::-webkit-input-placeholder  {
 }
 
 form button {
-    padding: 4% 24.7%;
-
+    width: 99%;
 }
 
 .right-side {
-    float: right;
     text-align: right;
     font-size: 0.8em;
     font-weight: bold;
 }
 
 .right-side h4 {
-    margin-bottom: 48%;
+    margin-bottom: 44%;
     font-size: 2em;
 }
 
 .contact-list li {
     margin-bottom: 14%;
     font-size: 1.15em;
+    display: flex;
+    flex-direction: column;
+    /*for IE*/
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
 }
 
 .contact-phone {
     font-weight: normal;
 }
 
-button {
-    background-color: #ef7d1d;
-    border: none;
-    color: #fff;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 8% 15%;
-    font-family: "Trade Gothic Condensed", sans-serif;
-    font-size: 1.1em;
-}
 
 
 /* class work on 13.07.2017 */

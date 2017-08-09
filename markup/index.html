@@ -10,7 +10,7 @@
     <link href="css/fontawesome/css/font-awesome.min.css" rel="stylesheet">
 
     <link media="all" rel="stylesheet" href="css/media.css">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
@@ -21,18 +21,23 @@
                 <a href="#">The apartments</a>
                 <a href="#">sustainability</a>
                 <a href="#">location</a>
-                <a href="#">contact</a>
-                <a href="#">about finbar</a>
                 <a href="#">neighbourhood</a>
+                <a href="#">about finbar</a>
+                <a href="#">contact</a>
             </nav>
 
             <h2 class="uppercase">Upper West side Apartments</h2>
             <span class="address">647 Murray Street, West Perth</span>
 
-            <table class="upper">
+            <table class="upper-table">
                 <tr><td>1 bed apartments from $375,000*</td><td>2 bed apartments from $485,000*</td></tr>
                 <tr><td colspan="2" class="table-text-decoration uppercase">23 Now sold!</td></tr>
-                <tr><td class="bottom-left"><a href="#"><img src="images/finbar.jpg" alt="finbar" title="finbar"></a></td><td class="bottom-right"><a href="#enquire" class="uppercase">Enquire now</a></td></tr>
+                <tr><td class="bottom-left"><a href="#"><img src="images/finbar.jpg" alt="finbar" title="finbar"></a></td>
+                    <td class="bottom-right">
+                        <div class="backgr-a">
+                            <a href="#enquire" class="uppercase">Enquire now</a>
+                        </div>
+                        </td></tr>
             </table>
         </header>
 
@@ -42,37 +47,29 @@
                     <div class="border">
                     </div>
 
-                    <div class="right-img-position">
-                        <img class="right-photo" src="images/apartment-2084992_1920.jpg" alt="apartment">
-                        <span class="block right-comment">spacious living</span>
-                    </div>
+                    <div class="flex-wrap">
+                        <article class="left">
+                            <h4>There's something in the Aire</h4>
+                            <p>Have the best of both worlds at AIRE. You'll be nestled between the lush tranquility of Kings Park, the buzz of Subiaco,
+                                Leederville and Northbridge nightlife, and the peacefulness of West Perth by night.</p>
+                        </article>
 
+                        <div class="right-img-position">
+                            <img class="right-photo" src="images/apartment-2084992_1920.jpg" alt="apartment">
+                            <span class="block right-comment">spacious living</span>
+                        </div>
 
-                    <article class="left">
-                        <h4>There's something in the Aire</h4>
-                        <p>Have the best of both worlds at AIRE. You'll be nestled between the lush tranquility of Kings Park, the buzz of Subiaco,
-                            Leederville and Northbridge nightlife, and the peacefulness of West Perth by night.</p>
-                    </article>
+                        <div class="left-img-position">
+                            <img class="left-photo" src="images/interior-1026440_1920.jpg" alt="luxury life">
+                            <span class="block left-comment">inner city living</span>
+                        </div>
 
-                    <div class="clearfix">
-                    </div>
-
-                    <div class="line">
-                    </div>
-
-                    <div class="left-img-position">
-                        <img class="left-photo" src="images/interior-1026440_1920.jpg" alt="luxury life">
-                        <span class="block left-comment">inner city living</span>
-                    </div>
-
-                    <article class="right">
-                        <h4>High quality city living without the price tag.</h4>
-                        <p>Apartment layouts have been designed to suit the city lifestyle, with 1 and 2 bedroom configurations available.
-                    </article>
-
-                    <a class="uppercase" href="#view-plans">view floorplans</a>
-
-                    <div class="clearfix">
+                        <article class="right">
+                            <div class="line"></div>
+                            <h4>High quality city living without the price tag.</h4>
+                            <p>Apartment layouts have been designed to suit the city lifestyle, with 1 and 2 bedroom configurations available.</p>
+                            <a class="uppercase" href="#view-plans">view floorplans</a>
+                        </article>
                     </div>
                 </section>
 
@@ -82,7 +79,7 @@
 
             <div class="video-block">
                 <span>Test video at lesson on 10.07.2017</span>
-                <video width='300' height='200' controls='controls'>
+                <video width='290' height='200' controls='controls'>
                     <source src='video/Muse-Starlight-_Official-Music-Video_.ogv' type='video/ogg' />
                     <source src='video/Muse%20-%20Starlight%20%5BOfficial%20Music%20Video%5D.mp4' type='video/mp4' />
                     <p>Your browser does not support video tag</p>
@@ -92,7 +89,7 @@
             <section class="advantages">
                 <div class="left-flex-block">
                     <h4 class="title1">Premium finishings, resort style facilities</h4>
-                    <p class="text1">With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
+                    <p>With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
                         All apartments include:</p>
                     <ul class="uppercase list1">
                         <li>
@@ -132,7 +129,7 @@
                     <hr>
 
                     <h4 class="title2">Sustainable living</h4>
-                    <p class="text2">With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
+                    <p>With Finbar's reputation got high quality developments and interiors, you'll be living in inner city style.
                         All apartments include:</p>
                     <ul class="uppercase list2">
                         <li>
@@ -231,14 +228,13 @@
                     <li><a href="#item7" title="Photo 7"><img src="images/gallery/pexels-photo-474743.jpeg" alt="hotel-7"></a></li>
                 </ul>
             </div>
-        </main>
-
-        <footer>
             <table class="bottom">
                 <tr><td>1 bed apartments from $375,000*</td><td>2 bed apartments from $375,000*</td></tr>
                 <tr><td colspan="2" class="table-text-decoration uppercase">23 Now sold!</td></tr>
             </table>
+        </main>
 
+        <footer>
             <article class="left-side">
                 <h4>Aire</h4>
                 <p>Itaque earum rerum hic tenetur a sapiente delectus, qui blanditiis praesentium voluptatum deleniti atque corrupti,
@@ -248,84 +244,85 @@
                 <button>Share & like</button>
             </article>
 
+            <div class="center">
+                <h4>Enquire</h4>
+
+                <form name="enquire" id="enquire" action="#" >
+                    <div class="left-column">
+                        <input class="underline block required" title="Please, enter your first name from the capital letter"
+                               type="text" placeholder="First Name" pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)?" required>
+                        <input class="underline block required" title="Please, enter your first name from the capital letter"
+                               type="text" placeholder="Last Name" pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)?" required>
+
+                        <div class="gender-block">
+                            <span class="block">Gender</span>
+                            <div class="gender-labels">
+                                <label for="female">Female<input class="gender" id="female" name="gender" type="radio"></label>
+                                <label for="male">Male<input class="gender" id="male" name="gender" type="radio"></label>
+                            </div>
+                        </div>
+
+                        <label class="date">Birth date<input class="underline date required" min="2017-07-11" title="Please, choose the birth date"
+                                                type="date" value="2017-08-01"></label>
+                        <input class="underline block required" title="Please, enter the email address" type="email" pattern="^(([a-z0-9-_\+]){2,}\.?)+@([a-z0-9-_\+]{2,}\.?)+"
+                               placeholder="Email" required>
+                        <input class="underline block" title="Please, enter your address" placeholder="Address">
+                        <input class="underline block required" title="Please, enter the phone in format 1234 567 890"
+                               pattern="^(\d{4}\s\d{3}\s\d{3})" placeholder="Phone" required>
+
+                        <span class="required-text">* Required fields</span>
+                    </div>
+
+                    <div class="right-column">
+                        <label for="hear-from">How did you hear about us</label>
+                        <select id="hear-from"class="block">
+                            <option value="friends">Friends</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="internet">Internet</option>
+                            <option value="other">Other variant</option>
+                        </select>
+
+                        <label for="bed">What are you looking for</label>
+                        <select id="bed" class="block">
+                            <option value="1">1 bed appartament</option>
+                            <option value="2">2 bed appartament</option>
+                            <option value="3">3 bed appartament</option>
+                        </select>
+
+                        <textarea class="underline block" name="textarea" placeholder="Questions / Comments" cols="30" rows="10"></textarea>
+
+                        <button type="submit">Send enquiry</button>
+                    </div>
+                </form>
+            </div>
+
             <section class="right-side">
                 <h4>Contacts</h4>
                 <ul class="contact-list uppercase">
                     <li>
                         <span>FirstName LastName</span>
-                        <br>
                         <span class="contact-phone">0417 655 324</span>
                     </li>
                     <li>
                         <span>FirstName LastName</span>
-                        <br>
                         <span class="contact-phone">0417 655 324</span>
                     </li>
                     <li>
                         <span>FirstName LastName</span>
-                        <br>
                         <span class="contact-phone">0417 655 324</span>
                     </li>
                     <li>
                         <span>FirstName LastName</span>
-                        <br>
                         <span class="contact-phone">0417 655 324</span>
                     </li>
                     <li>
                         <span>FirstName LastName</span>
-                        <br>
                         <span class="contact-phone">0417 655 324</span>
                     </li>
                 </ul>
             </section>
 
-            <form name="enquire" id="enquire" action="#" >
-                <h4>Enquire</h4>
 
-                <div class="left-column">
-                    <input class="underline block required" title="Please, enter your first name from the capital letter"
-                           type="text" placeholder="First Name" pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)?" required>
-                    <input class="underline block required" title="Please, enter your first name from the capital letter"
-                           type="text" placeholder="Last Name" pattern="^[A-Z][a-z]+(\s[A-Z][a-z]+)?" required>
-
-                    <div class="gender-block">
-                        <span class="block">Gender</span>
-                        <label for="female">Female</label><input class="gender" id="female" name="gender" type="radio">
-                        <label for="male">Male</label><input class="gender" id="male" name="gender" type="radio">
-                    </div>
-
-                    <label>Birth date<input class="underline date required" min="2017-07-11" title="Please, choose the birth date"
-                                            type="date" value="2017-07-13"></label>
-                    <input class="underline block required" title="Please, enter the email address" type="email" pattern="^(([a-z0-9-_\+]){2,}\.?)+@([a-z0-9-_\+]{2,}\.?)+"
-                           placeholder="Email" required>
-                    <input class="underline block" title="Please, enter your address" placeholder="Address">
-                    <input class="underline block required" title="Please, enter the phone in format 1234 567 890"
-                           pattern="^(\d{4}\s\d{3}\s\d{3})" placeholder="Phone" required>
-
-                    <span class="required-text">* Required fields</span>
-                </div>
-
-                <div class="right-column">
-                    <label for="hear-from">How did you hear about us</label>
-                    <select id="hear-from"class="block">
-                        <option value="friends">Friends</option>
-                        <option value="advertisement">Advertisement</option>
-                        <option value="internet">Internet</option>
-                        <option value="other">Other variant</option>
-                    </select>
-
-                    <label for="bed" class="label2">What are you looking for</label>
-                    <select id="bed" class="block">
-                        <option value="1">1 bed appartament</option>
-                        <option value="2">2 bed appartament</option>
-                        <option value="3">3 bed appartament</option>
-                    </select>
-
-                    <textarea class="underline block" name="textarea" placeholder="Questions / Comments" cols="30" rows="10"></textarea>
-
-                    <button type="submit">Send enquiry</button>
-                </div>
-            </form>
         </footer>
 
         <!--

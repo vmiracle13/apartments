@@ -1,480 +1,298 @@
-@media screen and (max-width: 1340px) {
-    #item1:target ~ .big-carousel                                           { left: -2.5%; }
-    #item2:target ~ .big-carousel                                           { left: -75.5%; }
-    #item3:target ~ .big-carousel                                           { left: -148.5%; }
-    #item4:target ~ .big-carousel                                           { left: -221.5%; }
-    #item5:target ~ .big-carousel                                           { left: -294.5%; }
-    #item6:target ~ .big-carousel                                           { left: -367.5%; }
-    #item7:target ~ .big-carousel                                           { left: -440%; }
-    .line {
-        right: 30%;
-    }
-}
-
 @media screen and (max-width: 1205px) {
-    .left-img-position {
-        margin-right: 20%;
-    }
-    .line {
-        right: 26.5%;
-    }
-    .right-img-position:hover ~ .line {
-        top: 46%;
-        height: 10%;
-    }
-
-    #item1:target ~ .big-carousel .gallery li:nth-of-type(1) img,
-    #item2:target ~ .big-carousel .gallery li:nth-of-type(2) img,
-    #item3:target ~ .big-carousel .gallery li:nth-of-type(3) img,
-    #item4:target ~ .big-carousel .gallery li:nth-of-type(4) img,
-    #item5:target ~ .big-carousel .gallery li:nth-of-type(5) img,
-    #item6:target ~ .big-carousel .gallery li:nth-of-type(6) img,
-    #item7:target ~ .big-carousel .gallery li:nth-of-type(7) img {
-        width: 910px;
-        height: auto;
-    }
-    .small-carousel {
-        top: 80%;
-        left: 13.2%;
-    }
-    .left-control-btn {
-        left: -2.5%;
-    }
-    .right-control-btn {
-        right: 11%;
-    }
-    .left-side h4 {
-        margin-bottom: 27%;
-    }
-    .right-side h4 {
-        margin-bottom: 40%;
-    }
-}
-
-@media screen and (max-width: 1160px) {
-    .main-layout article {
-        width: 30%;
-        font-size: 0.8em;
-    }
-    .left-img-position {
-        margin-right: 10%;
+    .right {
+        margin-left: -25%;
     }
     .border {
-        width: 260px;
-        height: 460px;
+        left: 28%;
+        top: 20%;
     }
-    .line {
-        top: 46%;
-        height: 10%;
-        right: 34%;
-    }
-    .left-control-btn {
-        left: -5%;
-    }
-    .right-control-btn {
-        right: 9%;
+    form textarea {
+        height: 43.5%;
     }
 }
 
-@media screen and (max-width: 1065px)  {
-    nav a {
-        margin-right: 2%;
-    }
-    .main-layout article {
-        font-size: 1.15em;
-        width: 25%;
-    }
-    .left {
-        margin-top: 2%;
-    }
-    h4 {
-        font-size: 1.4em;
-    }
-    .list1 {
+@media screen and (max-width: 1170px) {
+    .list1 span {
         font-size: 0.8em;
     }
-    form {
-        margin-right: 0;
-    }
-    form .left-column {
-        width: 40%;
-    }
-    form .right-column {
-        width: 58%;
-    }
-    .list1 span {
-        font-size: 0.9em;
-    }
-    .list1 i {
-        font-size: 2.2em;
+
+}
+
+@media screen and (max-width: 1120px) {
+    .list2 {
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     .list2 li {
-        margin-right: 0;
-    }
-    .list2 i {
-        font-size: 1em;
+        width: 100%;
+        padding: 7% 0;
     }
     .list2 span {
-        vertical-align: 0;
-        font-size: 0.8em;
-    }
-    .right-side h4 {
-        margin-bottom: 30%;
-    }
-    .right-img-position {
-        margin-bottom: 5%;
-    }
-    .left-img-position {
-        margin-right: 7%;
-    }
-    .line {
-        right: 32%;
-        top: 40%;
-    }
-    .right-img-position:hover ~ .line {
-        top: 35%;
-        height: 13%;
-    }
-    .bgimg {
-        height: 840px;
-    }
-    .background-advantages {
-        top: -14%;
-    }
-
-
-    .gallery {
-        left: 3%;
-    }
-    .gallery li {
-        width: auto;
-        height: 400px;
-    }
-    .gallery img {
-        height: 400px;
-    }
-    #item1:target ~ .big-carousel .gallery li:nth-of-type(1) img,
-    #item2:target ~ .big-carousel .gallery li:nth-of-type(2) img,
-    #item3:target ~ .big-carousel .gallery li:nth-of-type(3) img,
-    #item4:target ~ .big-carousel .gallery li:nth-of-type(4) img,
-    #item5:target ~ .big-carousel .gallery li:nth-of-type(5) img,
-    #item6:target ~ .big-carousel .gallery li:nth-of-type(6) img,
-    #item7:target ~ .big-carousel .gallery li:nth-of-type(7) img {
-        width: 750px;
-        height: auto;
-    }
-
-    .small-carousel {
-        top: 84%;
-        left: 20%;
-    }
-    .small-carousel img {
-        width: 70px;
-        height: auto;
-    }
-
-    #item1:target ~ .big-carousel                   { left: -2.8%; }
-    #item2:target ~ .big-carousel                   { left: -69%; }
-    #item3:target ~ .big-carousel                   { left: -135%; }
-    #item4:target ~ .big-carousel                   { left: -201%; }
-    #item5:target ~ .big-carousel                   { left: -266.5%; }
-    #item6:target ~ .big-carousel                   { left: -332.5%; }
-    #item7:target ~ .big-carousel                   { left: -398%; }
-
-    .carousel-wrap{
-        height: 640px;
-    }
-    .left-side {
-        margin-right: 2%;
+        margin-left: 20%;
     }
 }
 
-@media screen and (max-width: 985px) {
-    h1 {
-        margin-bottom: 5%;
-    }
-    nav a:nth-of-type(-n + 3), nav a:nth-of-type(n + 4) {
-        float: none;
-    }
-    .line {
-        right: 26%;
-    }
-    .right-img-position {
-        margin-top: 5%;
-    }
-    .right-img-position:hover ~ .line {
-        top: 38%;
-        height: 13%;
-    }
-    .border {
-        width: 230px;
-        height: 400px;
-    }
-    .bgimg {
-        top: 0;
-        height: 850px;
-    }
-    .main-layout a {
-        display: block;
-        width: 20%;
-        margin: 0 auto;
-    }
-    .main-layout article {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .main-layout h4 {
-        margin-bottom: 0;
-    }
+@media screen and (max-width: 1060px) {
     .advantages {
         display: block;
     }
-    .background-advantages {
-        top: 0;
+    .list1 {
+        margin-bottom: 5%;
     }
-    .list1 li {
+    .list1 li{
         margin-bottom: 0;
     }
     .list1 i {
-        font-size: 4em;
-        margin-bottom: 0;
-    }
-    .list1 span {
-        font-size: 1.3em;
-    }
-    .left-flex-block {
-        margin-right: 0;
-    }
-    .left-flex-block p {
-        margin-bottom: 3%;
+        margin: 0 auto;
     }
     hr {
-        margin-bottom: 5%;
+        margin-bottom: 4%;
+    }
+    .list2 {
+        margin-bottom: 10%;
+    }
+    .list2 li{
+        padding: 4% 0;
     }
     .list2 i {
         font-size: 2.5em;
     }
     .list2 span {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     .bg-advantages {
-        margin: 0 auto;
         display: block;
-    }
-    .main-layout {
-        margin-bottom: 4%;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    table {
-        width: 100%;
-    }
-    .bottom-right a {
-        padding: 16px 30px;
+        margin: 0 auto;
+        width: 80%;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1038px) {
+    .line {
+        top: 25%;
+    }
+    .main-layout h4 {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .right {
+        margin-left: 0;
+        flex-basis: 100%;
+    }
+    form textarea {
+        height: 41.5%;
+    }
+    .gender-block label:first-of-type {
+        flex-basis: 40%;
+    }
+    .gender-block label:last-of-type {
+        flex-basis: 30%;
+    }
+    .left-img-position {
+        margin-bottom: 10%;
+    }
+    .main-layout img {
+        width: 500px;
+    }
+    .right-comment {
+        left: -11%;
+        bottom: 14%;
+    }
+    .right-img-position:hover .right-comment{
+        bottom: 8%;
+        left: -21.5%;
+    }
+    .left-comment {
+        top: 14%;
+        right: -12%;
+    }
+    .left-img-position:hover .left-comment {
+        top: 12%;
+        right: -23%;
+        width: 30%;
+    }
+    .main-layout a {
+        padding: 2% 6%;
+    }
+}
+
+@media screen and (max-width: 935px) {
     h1 {
         margin-bottom: 5%;
     }
     nav {
-        display: flex;
         flex-direction: column;
-        margin-bottom: 7%;
     }
-    nav a {
-        margin-bottom: 1%;
+    nav a:nth-of-type(3) {
+        margin-right: 0;
     }
-    .bottom-right a {
-        font-size: 0.9em;
-        padding: 16px 20px;
+    .left {
+        flex-basis: 100%;
     }
-    .bottom-right a:before {
-        top: 4px;
+    .right-comment {
+        bottom: 14%;
+        left: 92%;
+        width: 20%;
     }
+    .right-img-position:hover .right-comment{
+        bottom: 7.5%;
+        left: 94%;
+        width: 25%;
+    }
+    .left-img-position {
+        margin-bottom: 5%;
+    }
+    form textarea {
+        height: 47%;
+    }
+    .gender-block label:first-of-type {
+        flex-basis: 45%;
+    }
+    .gender-block label:last-of-type {
+        flex-basis: 35%;
+    }
+}
 
-    .main-layout a {
+@media screen and (max-width: 870px) {
+    .gender-block label:first-of-type {
+        flex-basis: 50%;
+    }
+    .gender-block label:last-of-type {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form textarea {
+        height: 45.5%;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .main-layout img {
+        width: 380px;
+    }
+    .right-img-position, .left-img-position {
+        margin: 0 auto 10%;
+    }
+    .right-comment {
+        bottom: 22%;
+        left: 87%;
         width: 30%;
     }
-
-    .left-side, .right-side {
-        float: none;
-        width: 100%;
-        margin-bottom: 7%
+    .right-img-position:hover .right-comment{
+        bottom: 17.5%;
+        left: 85.5%;
+        width: 40%;
     }
-
-    .right-side {
-        text-align: left;
+    .left-comment {
+        top: 19%;
+        right: -16%;
     }
-    .left-side h4, .right-side h4, form h4 {
-        margin-bottom: 3%;
+    .left-img-position:hover .left-comment {
+        top: 19.8%;
+        right: -27.5%;
+        width: 40%;
+    }
+    .line, .border {
+        display: none;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .left-side, .center {
+        margin-bottom: 10%;
+    }
+    .left-side h4, .right-side h4 {
+        margin-bottom: 5%;
     }
     .left-side p:last-of-type {
         margin-bottom: 5%;
     }
     button {
-        padding: 2% 5%;
+        padding: 4% 7%;
     }
-    .contact-list {
-        column-count: 2;
+    form button {
+        padding: 7% 0;
+    }
+    .right-side {
+        text-align: justify;
     }
     .contact-list li {
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     }
     form textarea {
-        padding: 4% 0 2%;
-    }
-    form button {
-        padding: 4% 22%;
-    }
-}
-
-@media screen and (max-width: 736px) {
-    .bottom-right a {
-        padding: 5% 12%;
-    }
-}
-
-@media screen and (max-width: 655px) {
-    form textarea {
-        padding-bottom: 0;
-        line-height: 1.55;
-    }
-    .list2 li span {
-        margin-left: 10%;
-    }
-    .bottom-right a {
-        padding: 6% 12%;
-    }
-    .main-layout img {
-        width: 350px;
-        height: auto;
-    }
-    .right-comment {
-        bottom: 20%;
-        left: 10%;
-    }
-    .left-comment {
-        top: 23%;
-        right: 6%;
-    }
-    .right-img-position:hover .right-comment{
-        bottom: 17%;
-        left: -1%;
-    }
-    .left-img-position:hover .left-comment {
-        top: 24%;
-        right: -7.5%;
-        width: 33%;
-    }
-    form button {
-        padding: 4% 19%;
-    }
-    .right-img-position, .left-img-position {
-        text-align: center;
-        float: none;
-    }
-}
-
-@media screen and (max-width: 605px) {
-    .bg-advantages {
-        width: 300px;
-    }
-    .main-layout article {
-        font-size: 1em;
-    }
-    form .left-column, form .right-column {
-        display: block;
-        width: 70%;
-    }
-    form select, form textarea, form button {
-        width: 97%;
-    }
-    .right-img-position, .left-img-position {
-        margin-bottom: 10%;
-    }
-    .main-layout {
-        margin-bottom: 8%;
-    }
-    .main-layout article {
-        margin-bottom: 10%;
+        height: 42%;
     }
 }
 
 @media screen and (max-width: 570px) {
-    .main-layout a {
-        width: 35%;
+    form textarea {
+        height: 41%;
     }
 }
 
-@media screen and (max-width: 530px) {
-    .bottom-right a {
-        padding: 7.5% 12%;
-    }
-    .right-comment {
-        left: 0;
+@media screen and (max-width: 465px) {
+    .main-layout img {
+        width: 240px;
     }
     .left-comment {
-        top: 22%;
-        right: -4%;
-    }
-    .right-img-position:hover .right-comment{
-        bottom: 17%;
-        left: -12%;
+        top: 28%;
+        right: -25%;
     }
     .left-img-position:hover .left-comment {
-        top: 22%;
-        right: -19%;
-        width: 38%;
+        top: 38%;
+        right: -40%;
+        width: 67%;
     }
-    .line {
-        right: 10%;
-    }
-    .left-flex-block {
-        font-size: 0.7em;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .main-layout a {
+    .right-comment {
+        bottom: 33%;
         width: 45%;
+        left: 80%;
+    }
+    .right-img-position:hover .right-comment{
+        bottom: 30%;
+        left: 75%;
+        width: 60%;
+    }
+    form {
+        flex-direction: column;
+    }
+    button {
+        padding: 7% 7%;
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .required-text {
+        display: block;
+        margin-bottom: 10%;
     }
 }
 
-@media screen and (max-width: 455px) {
-    .bottom-right a {
-        padding: 11% 3%;
-    }
-    .main-layout h4 {
-        font-size: 1.0em;
-    }
-    .border {
-        left: 25%;
+@media screen and (max-width: 360px) {
+    .list1 li{
+        flex-basis: 20%;
     }
 }
 
-@media screen and (max-width: 415px) {
-    .bottom-right a {
-        padding: 12% 10%;
-        font-size: 0.6em;
+@media screen and (max-width: 340px) {
+    .right-photo:hover, .left-photo:hover {
+        transform: scale(1.1);
     }
-    .main-layout img {
-        width: 250px;
+    .left-img-position:hover .left-comment, .right-img-position:hover .right-comment {
+        font-size: 0.55em;
     }
-}
-
-@media screen and (max-width: 390px) {
-    .main-layout article {
-        font-size: 0.8em;
+    .left-img-position:hover .left-comment {
+        top: 41%;
+        right: -33%;
     }
-    .bottom-right a {
-        padding: 11% 3%;
+    .left-comment {
+        right: -24.5%;
     }
-    .border {
-        left: 19%;
-        height: 300px;
+    .right-img-position:hover .right-comment{
+        bottom: 34%;
+        left: 75%;
     }
 }
