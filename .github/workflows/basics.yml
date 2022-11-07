@@ -1,0 +1,24 @@
+name: My-Github-Actions-Basics
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  my_build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+  my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello Message
+      run: echo "Hello world"
+     
+    
