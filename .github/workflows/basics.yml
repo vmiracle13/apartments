@@ -1,4 +1,7 @@
 name: My-Github-Actions-Basics
+env:
+  APPLICATION_NAME: "MyBasic"
+  DEPLOY_PACKAGE_NAME: "simple_deploy_version_${{ github.sha }}"
 
 on:
   push:
@@ -15,11 +18,21 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
 
+    - name: Execute few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
+        echo "Application name is ${{ env.APPLICATION_NAME }}"
+        
+
   my_deploy:
     runs-on: ubuntu-latest
     needs: [my_build]
     steps:
     - name: Print Hello Message
       run: echo "Hello world"
+
+    - name: Printing deplyment package
+      run: echo "Deployment package name ${{ env.DEPLOY_PACKAGE_NAME }}"
      
     
