@@ -23,6 +23,9 @@ jobs:
         echo "Hello Message 1"
         echo "Hello Message 2"
         echo "Application name is ${{ env.APPLICATION_NAME }}"
+  
+    - name: List current folder
+      run: ls -la
         
 
   my_deploy:
@@ -32,7 +35,7 @@ jobs:
     - name: Print Hello Message
       run: echo "Hello world"
 
-    - name: Printing deplyment package
+    - name: Printing deployment package
       run: echo "Deployment package name ${{ env.DEPLOY_PACKAGE_NAME }}"
      
     
