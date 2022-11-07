@@ -46,12 +46,13 @@ jobs:
       run: echo "Hello world"
       
     - name: Print env vars
+      env:
+        LOCAL_VAR: "This is super local Environment variable"
       run: |
         echo "Var1 = ${{ env.VAR1 }}"
         echo "Var2 = ${{ env.VAR2 }}"
         echo "Var3 = $LOCAL_VAR"
-      env:
-        LOCAL_VAR: "This is super local Environment variable"
+     
 
     - name: Printing deployment package
       run: echo "Deployment package name ${{ env.DEPLOY_PACKAGE_NAME }}"
